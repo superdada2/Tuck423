@@ -1,0 +1,166 @@
+//
+//  mjpeg423_decoder.c
+//  mjpeg423app
+//
+//  Created by Rodolfo Pellizzoni on 12/24/13.
+//  Copyright (c) 2013 __MyCompanyName__. All rights reserved.
+//
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "altera_avalon_mailbox_simple.h"
+#include "altera_avalon_mailbox_simple_regs.h"
+#include "sys/alt_cache.h"
+#include "../common/mjpeg423_types.h"
+#include "mjpeg423_decoder.h"
+#include "../common/util.h"
+#include <stdbool.h>
+
+#define FRAME_RATE 24
+#define DEBUG 0
+
+static void dma_read(alt_msgdma_dev *device, alt_msgdma_standard_descriptor *descriptor, alt_u32 *address, alt_u32 len, bool is_sync)
+{
+	int ret;
+
+	ret = alt_msgdma_construct_standard_mm_to_st_descriptor(device, descriptor, address, len, 0);
+	if (ret != 0)
+	{
+		fprintf(stderr, "ERROR CPU1: dma_read can't make descriptor\n");
+	}
+
+	ret = is_sync ? alt_msgdma_standard_descriptor_sync_transfer(device, descriptor) : alt_msgdma_standard_descriptor_async_transfer(device, descriptor);
+	if (ret != 0)
+	{
+		fprintf(stderr, "ERROR CPU1: dma_read can't transfer: %d\n", ret);
+	}
+	else
+	{
+		printf("CPU1: dma_read success.\n");
+	}
+}
+
+// main decoder function
+void mjpeg423_decode(alt_msgdma_dev *read_dma_cb, alt_msgdma_dev *read_dma_cr)
+{
+	int status;
+	int frame_index;
+	int frame_type;
+	int block_size;
+	uint8_t *Cbbitstream;
+	uint8_t *Crbitstream;
+	uint message[2];
+	message_t *msg;
+	altera_avalon_mailbox_dev *signal_cpu0;
+	altera_avalon_mailbox_dev *receive_cpu0;
+
+	// setup the mailboxes
+	signal_cpu0 = altera_avalon_mailbox_open(MAILBOX_SIMPLE_1_0_NAME, NULL, NULL);
+	receive_cpu0 = altera_avalon_mailbox_open(MAILBOX_SIMPLE_0_1_NAME, NULL, NULL);
+
+	if (!signal_cpu0 || !receive_cpu0)
+	{
+		fprintf(stderr, "ERROR: failed to open mailbox\n");
+		return;
+	}
+
+	alt_msgdma_standard_descriptor *read_descriptor_cb = (alt_msgdma_standard_descriptor*)malloc(sizeof(alt_msgdma_standard_descriptor));
+	alt_msgdma_standard_descriptor *read_descriptor_cr = (alt_msgdma_standard_descriptor*)malloc(sizeof(alt_msgdma_standard_descriptor));
+
+	// wait for 1st message
+	while (1)
+	{
+		altera_avalon_mailbox_retrieve_poll(receive_cpu0, message, 0);
+
+		if (message == NULL)
+		{
+			printf("Receive Error\n");
+		}
+		else
+		{
+
+			frame_index = message[0];
+			msg = (message_t*)message[1];
+
+			block_size = msg->block_size;
+			printf("Received 1st message Size: %d, number: %d", message[0], msg->block_size);
+			break;
+		}
+	}
+	//send framesize ack
+	while (altera_avalon_mailbox_send(signal_cpu0, message, 0, POLL));
+
+    dct_block_t* CbDCAC;
+    if((CbDCAC = (dct_block_t*)memalign(128, block_size * 64 * sizeof(DCTELEM))) == NULL)
+    {
+    	error_and_exit("cannot allocate CbDCAC");
+    }
+    dct_block_t* CrDCAC;
+    if((CrDCAC = (dct_block_t*)memalign(128, block_size * 64 * sizeof(DCTELEM))) == NULL)
+    {
+    	error_and_exit("cannot allocate CrDCAC");
+    }
+
+#if DEBUG
+    	DEBUG_PRINT_ARG("\nFrame #%u\n", frame_index)
+#endif
+
+    while (1)
+    {
+    	// wait for message from cpu0
+    	while (1)
+    	{
+    		altera_avalon_mailbox_retrieve_poll(receive_cpu0, message, 0);
+
+    		if (message == NULL)
+    		{
+    			printf("Receive Error\n");
+    		}
+    		else
+    		{
+    			frame_index = message[0];
+    			msg = (message_t*)message[1];
+
+    			Cbbitstream = msg->Cbbitstream;
+    			Crbitstream = msg->Crbitstream;
+    			frame_type = msg->frame_type;
+
+    			break;
+    		}
+    	}
+
+        // lossless decoding
+        lossless_decode(block_size, Cbbitstream, CbDCAC, Cquant, frame_type);
+        lossless_decode(block_size, Crbitstream, CrDCAC, Cquant, frame_type);
+
+        // signal cpu0 that we're ready for new data
+        message[0] = frame_index;
+        message[1] = 0;
+
+        while (altera_avalon_mailbox_send(signal_cpu0, message, 0, POLL));
+
+        // idct
+        alt_dcache_flush_all();  // flush cache
+
+        dma_read(read_dma_cb, read_descriptor_cb, (alt_u32*)CbDCAC, 128 * block_size, FALSE);
+        dma_read(read_dma_cr, read_descriptor_cr, (alt_u32*)CrDCAC, 128 * block_size, FALSE);
+    } // end frame iteration
+#if DEBUG
+    DEBUG_PRINT("\nDecoder done.\n\n\n")
+#endif
+
+exit_decode:
+	altera_avalon_mailbox_close(signal_cpu0);
+    altera_avalon_mailbox_close(receive_cpu0);
+
+    free(msg);
+
+    free(CbDCAC);
+    free(CrDCAC);
+    free(read_descriptor_cb);
+    free(read_descriptor_cr);
+
+    return;
+}
+

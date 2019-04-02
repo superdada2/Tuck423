@@ -1,0 +1,420 @@
+//
+//  mjpeg423_decoder.c
+//  mjpeg423app
+//
+//  Created by Rodolfo Pellizzoni on 12/24/13.
+//  Copyright (c) 2013 __MyCompanyName__. All rights reserved.
+//
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "altera_avalon_mailbox_simple.h"
+#include "altera_avalon_mailbox_simple_regs.h"
+#include "sys/alt_cache.h"
+#include "../common/mjpeg423_types.h"
+#include "mjpeg423_decoder.h"
+#include "../common/util.h"
+
+#define FRAME_RATE 24
+#define DEBUG 0
+
+static iframe_trailer_t *closest_iframe_index(iframe_trailer_t *trailer, int num_iframes, int frame_index)
+{
+	int closest_index = 0;
+	int closest_distance = abs(frame_index - trailer[0].frame_index);
+
+	for (int i = 1; i < num_iframes; i++)
+	{
+		int current_distance = abs(frame_index - trailer[i].frame_index);
+
+		// Should always be shrinking, otherwise we found the closest one already
+		if (current_distance > closest_distance)
+		{
+			break;
+		}
+
+		closest_distance = current_distance;
+		closest_index = i;
+	}
+
+	return &trailer[closest_index];
+}
+
+// Returns frame number that we jumped to, -1 for error
+static int jump_to_iframe(FAT_FILE_HANDLE file_handle, iframe_trailer_t *iframe)
+{
+	if (Fat_FileSeek(file_handle, FILE_SEEK_BEGIN, iframe->frame_position) == FALSE)
+	{
+		error_and_exit("cannot seek into file");
+	}
+	return iframe->frame_index;
+}
+
+static void dma_callback(void *p_display)
+{
+    // output to video hardware module
+	ece423_video_display_register_written_buffer((ece423_video_display*)p_display);
+}
+
+static void dma_read(alt_msgdma_dev *device, alt_msgdma_standard_descriptor *descriptor, alt_u32 *address, alt_u32 len, bool is_sync)
+{
+	int ret;
+
+	ret = alt_msgdma_construct_standard_mm_to_st_descriptor(device, descriptor, address, len, 0);
+	if (ret != 0)
+	{
+		fprintf(stderr, "ERROR CPU0: dma_read can't make descriptor\n");
+	}
+
+	ret = is_sync ? alt_msgdma_standard_descriptor_sync_transfer(device, descriptor) : alt_msgdma_standard_descriptor_async_transfer(device, descriptor);
+	if (ret != 0)
+	{
+		fprintf(stderr, "ERROR CPU0: dma_read can't transfer: %d\n", ret);
+	}
+	else
+	{
+		printf("CPU0: dma_read success.\n");
+	}
+}
+
+static void dma_write(alt_msgdma_dev *device, alt_msgdma_standard_descriptor *descriptor, alt_u32 *address, alt_u32 len, bool is_sync)
+{
+	int ret;
+
+	ret = alt_msgdma_construct_standard_st_to_mm_descriptor(device, descriptor, address, len, 0);
+	if (ret != 0)
+	{
+		fprintf(stderr, "ERROR CPU0: dma_write can't make descriptor\n");
+	}
+
+	ret = is_sync ? alt_msgdma_standard_descriptor_sync_transfer(device, descriptor) : alt_msgdma_standard_descriptor_async_transfer(device, descriptor);
+	if (ret != 0)
+	{
+		fprintf(stderr, "ERROR CPU0: dma_write can't transfer: %d\n", ret);
+	}
+}
+
+// main decoder function
+void mjpeg423_decode(FAT_FILE_HANDLE file_handle, ece423_video_display* p_display, alt_msgdma_dev *read_dma_y, alt_msgdma_dev *write_dma)
+{
+	volatile int playback = 1;
+	int frame_index_cpu1;
+	uint message[2];
+	message_t *msg = (message_t*)malloc(sizeof(message_t));
+	altera_avalon_mailbox_dev *signal_cpu1;
+	altera_avalon_mailbox_dev *receive_cpu1;
+
+	// setup the mailboxes
+	signal_cpu1 = altera_avalon_mailbox_open(MAILBOX_SIMPLE_0_1_NAME, NULL, NULL);
+	receive_cpu1 = altera_avalon_mailbox_open(MAILBOX_SIMPLE_1_0_NAME, NULL, NULL);
+
+	if (!signal_cpu1 || !receive_cpu1)
+	{
+		fprintf(stderr, "ERROR: failed to open mailbox\n");
+		return;
+	}
+
+	alt_msgdma_standard_descriptor *read_desc_y = (alt_msgdma_standard_descriptor *) malloc(sizeof(alt_msgdma_standard_descriptor));
+	alt_msgdma_standard_descriptor *write_desc = (alt_msgdma_standard_descriptor *) malloc(sizeof(alt_msgdma_standard_descriptor));
+
+	alt_msgdma_register_callback(write_dma, dma_callback, ALTERA_MSGDMA_CSR_GLOBAL_INTERRUPT_MASK, (void*)p_display);  // register write_dma callback to register frame
+
+    // header and payload info
+    uint32_t num_frames, w_size, h_size, num_iframes, payload_size;
+    uint32_t Ysize, Cbsize, frame_size, frame_type;
+    uint8_t *Cbbitstream, *Crbitstream;
+    
+#if PROFILE
+    alt_u32 time;
+#endif
+
+    // good to reset
+    is_pressed = NONE_PRESSED;
+
+    // read header
+    if(Fat_FileRead(file_handle, &num_frames, sizeof(uint32_t)) == FALSE)
+    {
+    	error_and_exit("cannot read input file");
+    }
+#if DEBUG
+    DEBUG_PRINT_ARG("Decoder start. Num frames #%u\n", num_frames)
+#endif
+
+    if(Fat_FileRead(file_handle, &w_size, sizeof(uint32_t)) == FALSE)
+    {
+    	error_and_exit("cannot read input file");
+    }
+#if DEBUG
+    DEBUG_PRINT_ARG("Width %u\n", w_size)
+#endif
+
+    if(Fat_FileRead(file_handle, &h_size, sizeof(uint32_t)) == FALSE)
+    {
+    	error_and_exit("cannot read input file");
+    }
+#if DEBUG
+    DEBUG_PRINT_ARG("Height %u\n", h_size)
+#endif
+
+    if(Fat_FileRead(file_handle, &num_iframes, sizeof(uint32_t)) == FALSE)
+    {
+    	error_and_exit("cannot read input file");
+    }
+#if DEBUG
+    DEBUG_PRINT_ARG("Num i frames %u\n", num_iframes)
+#endif
+
+    if(Fat_FileRead(file_handle, &payload_size, sizeof(uint32_t)) == FALSE)
+    {
+    	error_and_exit("cannot read input file");
+    }
+
+    int hCb_size = h_size/8;           // number of chrominance blocks
+    int wCb_size = w_size/8;
+    int hYb_size = h_size/8;           // number of luminance blocks. Same as chrominance in the sample app
+    int wYb_size = w_size/8;
+    
+    msg->block_size = hCb_size * wCb_size;
+
+    // give cpu1 block size so it can do its allocations
+	message[0] = 0;
+	message[1] = msg;
+	printf("Sending blocksize.number %d, size %d  \n", message[0], msg->block_size);
+
+	// flush cache
+	alt_dcache_flush_all();
+	while (altera_avalon_mailbox_send(signal_cpu1, message, 0, POLL));
+
+	//waiting for reply
+	while (1)
+			{
+				altera_avalon_mailbox_retrieve_poll(receive_cpu1, message, 0);
+
+				if (message == NULL)
+				{
+					printf("Receive Error\n");
+				}
+				else
+				{
+					alt_dcache_flush_all();
+					frame_index_cpu1 = message[0];
+					printf("Receive blocksize reply Size:%d, index: %d \n", msg->block_size,  message[0]);
+					// check frame index?
+					break;
+				}
+			}
+
+    // trailer structure
+    iframe_trailer_t* trailer = (iframe_trailer_t*)malloc(sizeof(iframe_trailer_t)*num_iframes);
+    
+    // main data structures. See lab manual for explanation
+    alt_u32* p_buffer;
+    dct_block_t* YDCAC;
+    if((YDCAC = (dct_block_t*)memalign(128, hYb_size * wYb_size * 64 * sizeof(DCTELEM))) == NULL)
+    {
+    	error_and_exit("cannot allocate YDCAC");
+    }
+
+    // Ybitstream is assigned a size sufficient to hold all bistreams
+    // the bitstream is then read from the file into Ybitstream
+    // the remaining pointers simply point to the beginning of the Cb and Cr streams within Ybitstream
+    uint8_t* Ybitstream;
+    if((Ybitstream = malloc(hYb_size * wYb_size * 64 * sizeof(DCTELEM) + 2 * hCb_size * wCb_size * 64 * sizeof(DCTELEM))) == NULL)
+    {
+    	error_and_exit("cannot allocate bitstream");
+    }
+    
+    // read trailer. Note: the trailer information is not used in the sample decoder app
+    // set file to beginning of trailer
+    if(Fat_FileSeek(file_handle, FILE_SEEK_BEGIN, 5 * sizeof(uint32_t) + payload_size) == FALSE)
+    {
+    	error_and_exit("cannot seek into file");
+    }
+    for(int count = 0; count < num_iframes; count++)
+    {
+        if(Fat_FileRead(file_handle, &(trailer[count].frame_index), sizeof(uint32_t)) == FALSE) error_and_exit("cannot read input file");
+        if(Fat_FileRead(file_handle, &(trailer[count].frame_position), sizeof(uint32_t)) == FALSE) error_and_exit("cannot read input file");
+#if DEBUG
+        DEBUG_PRINT_ARG("I frame index %u, ", trailer[count].frame_index)
+        DEBUG_PRINT_ARG("position %u\n", trailer[count].frame_position)
+#endif
+    }
+    // set it back to beginning of payload
+    if(Fat_FileSeek(file_handle, FILE_SEEK_BEGIN, 5 * sizeof(uint32_t)) == FALSE)
+    {
+    	error_and_exit("cannot seek into file");
+    }
+    
+    // read and decode frames
+    for(int frame_index = 0; frame_index < num_frames; frame_index ++)
+    {
+    	do
+    	{
+			switch(is_pressed)
+			{
+				// Play/Pause
+				case BUTTON_0:
+				{
+					printf("Play/Pause\n");
+					is_pressed = NONE_PRESSED;
+					playback = !playback;
+
+					break;
+				}
+				// Stop
+				case BUTTON_1:
+				{
+					printf("Stop\n");
+					is_pressed = NONE_PRESSED;
+
+					goto exit_decode;
+				}
+				// Fast forward
+				case BUTTON_2:
+				{
+					printf("Fast Forward\n");
+					is_pressed = NONE_PRESSED;
+
+					// if fast forward past end of video
+					if (frame_index + FRAME_RATE * 5 > num_frames - 1)
+					{
+						goto exit_decode;
+					}
+					frame_index = jump_to_iframe(file_handle, closest_iframe_index(trailer, num_iframes, frame_index + FRAME_RATE * 5));
+					break;
+				}
+				// Rewind
+				case BUTTON_3:
+				{
+					printf("Rewind\n");
+					frame_index = jump_to_iframe(file_handle, closest_iframe_index(trailer, num_iframes, frame_index - FRAME_RATE * 5));
+					is_pressed = NONE_PRESSED;
+					break;
+				}
+				default:
+				{
+					break;
+				}
+			}
+    	} while (!playback);
+#if DEBUG
+    	DEBUG_PRINT_ARG("\nFrame #%u\n", frame_index)
+#endif
+
+#if PROFILE_SD_READ
+    	alt_timestamp_start();
+#endif
+
+        // read frame payload
+        if(Fat_FileRead(file_handle, &frame_size, sizeof(uint32_t)) == FALSE)
+		{
+			error_and_exit("cannot read input file");
+		}
+#if DEBUG
+        DEBUG_PRINT_ARG("Frame_size %u\n", frame_size)
+#endif
+
+        if(Fat_FileRead(file_handle, &frame_type, sizeof(uint32_t)) == FALSE)
+        {
+        	error_and_exit("cannot read input file");
+        }
+#if DEBUG
+        DEBUG_PRINT_ARG("Frame_type %u\n", frame_type)
+#endif
+
+        if(Fat_FileRead(file_handle, &Ysize, sizeof(uint32_t)) == FALSE)
+        {
+        	error_and_exit("cannot read input file");
+        }
+        if(Fat_FileRead(file_handle, &Cbsize, sizeof(uint32_t)) == FALSE)
+        {
+        	error_and_exit("cannot read input file");
+        }
+        if(Fat_FileRead(file_handle, Ybitstream, frame_size - 4 * sizeof(uint32_t)) == FALSE)
+        {
+        	error_and_exit("cannot read input file");
+        }
+
+#if PROFILE_SD_READ
+    	time = alt_timestamp();
+    	printf("%u\n", time);
+#endif
+
+    	// get bit streams
+    	Cbbitstream = Ybitstream + Ysize;
+    	Crbitstream = Cbbitstream + Cbsize;
+
+        // populate message
+        msg->Cbbitstream = Cbbitstream;
+        msg->Crbitstream = Crbitstream;
+        msg->frame_type  = frame_type;
+
+        // lossless decoding
+        // signal cpu1 to decode Cb/Cr
+		message[0] = frame_index;
+		message[1] = msg;
+		printf("Sending frame.  number: %d, Cb: %d \n", frame_index, msg->Cbbitstream);
+		alt_dcache_flush_all();
+		while (altera_avalon_mailbox_send(signal_cpu1, message, 0, POLL));
+        lossless_decode(hYb_size * wYb_size, Ybitstream, YDCAC, Yquant, frame_type);
+
+		// get free buffer
+		while (ece423_video_display_buffer_is_available(p_display) != 0) {};
+		p_buffer = ece423_video_display_get_buffer(p_display);
+
+        // idct
+#if PROFILE_IDCT_FRAME
+        alt_timestamp_start();
+#endif
+        // flush cache
+        alt_dcache_flush_all();
+
+        dma_read(read_dma_y, read_desc_y, (alt_u32*)YDCAC, 128 * hYb_size * wYb_size, FALSE);
+    	dma_write(write_dma, write_desc, p_buffer, 2048, FALSE);
+
+#if PROFILE_IDCT_FRAME
+        time = alt_timestamp();
+        printf("%u\n", time);
+#endif
+        printf("waiting for frame # %d ,\n", frame_index);
+		// wait for message from cpu1 saying it's done
+        while (1)
+		{
+			altera_avalon_mailbox_retrieve_poll(receive_cpu1, message, 0);
+
+			if (message == NULL)
+			{
+				printf("Receive Error\n");
+			}
+			else
+			{
+				frame_index_cpu1 = message[0];
+				printf("received frame index %d \n", message[0]);
+
+				// check frame index?
+				break;
+			}
+		}
+
+    } // end frame iteration
+#if DEBUG
+    DEBUG_PRINT("\nDecoder done.\n\n\n")
+#endif
+    
+exit_decode:
+    // clean up
+    ece423_video_display_discard_buffered_frames(p_display);
+
+	altera_avalon_mailbox_close(signal_cpu1);
+    altera_avalon_mailbox_close(receive_cpu1);
+
+    free(YDCAC);
+    free(Ybitstream);
+
+    free(msg);
+    free(read_desc_y);
+    free(write_desc);
+
+    return;
+}

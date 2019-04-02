@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system name="$${FILENAME}">
+ <component
+   name="$${FILENAME}"
+   displayName="$${FILENAME}"
+   version="1.0"
+   description=""
+   tags=""
+   categories="System" />
+ <parameter name="bonusData"><![CDATA[bonusData 
+{
+   element clk
+   {
+      datum _sortIndex
+      {
+         value = "3";
+         type = "int";
+      }
+   }
+   element memory
+   {
+      datum _sortIndex
+      {
+         value = "0";
+         type = "int";
+      }
+   }
+   element memory_bridge
+   {
+      datum _sortIndex
+      {
+         value = "2";
+         type = "int";
+      }
+   }
+   element memory_sharer
+   {
+      datum _sortIndex
+      {
+         value = "1";
+         type = "int";
+      }
+   }
+}
+]]></parameter>
+ <parameter name="clockCrossingAdapter" value="HANDSHAKE" />
+ <parameter name="device" value="5CGXFC5C6F27C7" />
+ <parameter name="deviceFamily" value="Cyclone V" />
+ <parameter name="deviceSpeedGrade" value="7_H6" />
+ <parameter name="fabricMode" value="QSYS" />
+ <parameter name="generateLegacySim" value="false" />
+ <parameter name="generationId" value="0" />
+ <parameter name="globalResetBus" value="false" />
+ <parameter name="hdlLanguage" value="VERILOG" />
+ <parameter name="hideFromIPCatalog" value="false" />
+ <parameter name="lockedInterfaceDefinition" value="" />
+ <parameter name="maxAdditionalLatency" value="1" />
+ <parameter name="projectName" value="" />
+ <parameter name="sopcBorderPoints" value="false" />
+ <parameter name="systemHash" value="0" />
+ <parameter name="testBenchDutName" value="" />
+ <parameter name="timeStamp" value="0" />
+ <parameter name="useTestBenchNamingPattern" value="false" />
+ <instanceScript></instanceScript>
+ <interface name="bridge" internal="memory_bridge.out" type="conduit" dir="end" />
+ <interface name="clk" internal="clk.clk_in" type="clock" dir="end" />
+ <interface name="reset" internal="clk.clk_in_reset" type="reset" dir="end" />
+ <interface name="uas" internal="memory.uas" type="avalon" dir="end" />
+ <module name="clk" kind="clock_source" version="15.1" enabled="1">
+  <parameter name="clockFrequency" value="125000000" />
+  <parameter name="clockFrequencyKnown" value="true" />
+  <parameter name="inputClockFrequency" value="0" />
+  <parameter name="resetSynchronousEdges" value="NONE" />
+ </module>
+ <module
+   name="memory"
+   kind="altera_generic_tristate_controller"
+   version="15.1"
+   enabled="1">
+  <parameter name="ACTIVE_LOW_BEGINTRANSFER" value="0" />
+  <parameter name="ACTIVE_LOW_BYTEENABLE" value="1" />
+  <parameter name="ACTIVE_LOW_CHIPSELECT" value="1" />
+  <parameter name="ACTIVE_LOW_IRQ" value="0" />
+  <parameter name="ACTIVE_LOW_LOCK" value="0" />
+  <parameter name="ACTIVE_LOW_OUTPUTENABLE" value="1" />
+  <parameter name="ACTIVE_LOW_READ" value="0" />
+  <parameter name="ACTIVE_LOW_RESETREQUEST" value="0" />
+  <parameter name="ACTIVE_LOW_RESET_OUTPUT" value="0" />
+  <parameter name="ACTIVE_LOW_WAITREQUEST" value="0" />
+  <parameter name="ACTIVE_LOW_WRITE" value="1" />
+  <parameter name="ACTIVE_LOW_WRITEBYTEENABLE" value="0" />
+  <parameter name="AUTO_CLK_CLOCK_DOMAIN" value="1" />
+  <parameter name="AUTO_CLK_RESET_DOMAIN" value="1" />
+  <parameter name="AUTO_DEVICE" value="5CGXFC5C6F27C7" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone V" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="7_H6" />
+  <parameter name="CHIPSELECT_THROUGH_READLATENCY" value="0" />
+  <parameter name="INTERFACE_ASSIGNMENT_KEYS">embeddedsw.configuration.isMemoryDevice</parameter>
+  <parameter name="INTERFACE_ASSIGNMENT_VALUES" value="1" />
+  <parameter name="IS_MEMORY_DEVICE" value="1" />
+  <parameter name="MODULE_ASSIGNMENT_KEYS">embeddedsw.configuration.hwClassnameDriverSupportList,embeddedsw.CMacro.SRAM_MEMORY_SIZE,embeddedsw.CMacro.SRAM_MEMORY_UNITS,embeddedsw.CMacro.SSRAM_DATA_WIDTH,embeddedsw.memoryInfo.MEM_INIT_DATA_WIDTH,embeddedsw.memoryInfo.HAS_BYTE_LANE,embeddedsw.memoryInfo.GENERATE_DAT_SYM,embeddedsw.memoryInfo.DAT_SYM_INSTALL_DIR</parameter>
+  <parameter name="MODULE_ASSIGNMENT_VALUES">altera_avalon_lan91c111:altera_avalon_cfi_flash,524288,1,16,16,1,1,SIM_DIR</parameter>
+  <parameter name="TCM_ADDRESS_W" value="19" />
+  <parameter name="TCM_BYTEENABLE_W" value="2" />
+  <parameter name="TCM_DATA_HOLD" value="10" />
+  <parameter name="TCM_DATA_W" value="16" />
+  <parameter name="TCM_MAX_PENDING_READ_TRANSACTIONS" value="3" />
+  <parameter name="TCM_READLATENCY" value="2" />
+  <parameter name="TCM_READ_WAIT" value="10" />
+  <parameter name="TCM_SETUP_WAIT" value="10" />
+  <parameter name="TCM_SYMBOLS_PER_WORD" value="2" />
+  <parameter name="TCM_TIMING_UNITS" value="0" />
+  <parameter name="TCM_TURNAROUND_TIME" value="2" />
+  <parameter name="TCM_WRITE_WAIT" value="10" />
+  <parameter name="USE_ADDRESS" value="1" />
+  <parameter name="USE_BEGINTRANSFER" value="0" />
+  <parameter name="USE_BYTEENABLE" value="1" />
+  <parameter name="USE_CHIPSELECT" value="1" />
+  <parameter name="USE_IRQ" value="0" />
+  <parameter name="USE_LOCK" value="0" />
+  <parameter name="USE_OUTPUTENABLE" value="1" />
+  <parameter name="USE_READ" value="0" />
+  <parameter name="USE_READDATA" value="1" />
+  <parameter name="USE_RESETREQUEST" value="0" />
+  <parameter name="USE_RESET_OUTPUT" value="0" />
+  <parameter name="USE_WAITREQUEST" value="0" />
+  <parameter name="USE_WRITE" value="1" />
+  <parameter name="USE_WRITEBYTEENABLE" value="0" />
+  <parameter name="USE_WRITEDATA" value="1" />
+ </module>
+ <module
+   name="memory_bridge"
+   kind="altera_tristate_conduit_bridge"
+   version="15.1"
+   enabled="1">
+  <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone V" />
+  <parameter name="INTERFACE_INFO"><![CDATA[<info><slave name="tcs"><master name="memory_sharer.tcm"><pin role="" width="1" type="Invalid" output_name="" output_enable_name="" input_name="" /><pin role="memory_tcm_address_out" width="19" type="Output" output_name="memory_tcm_address_out" output_enable_name="" input_name="" /><pin role="memory_tcm_byteenable_n_out" width="2" type="Output" output_name="memory_tcm_byteenable_n_out" output_enable_name="" input_name="" /><pin role="memory_tcm_outputenable_n_out" width="1" type="Output" output_name="memory_tcm_outputenable_n_out" output_enable_name="" input_name="" /><pin role="memory_tcm_write_n_out" width="1" type="Output" output_name="memory_tcm_write_n_out" output_enable_name="" input_name="" /><pin role="memory_tcm_data_out" width="16" type="Bidirectional" output_name="memory_tcm_data_out" output_enable_name="memory_tcm_data_outen" input_name="memory_tcm_data_in" /><pin role="memory_tcm_chipselect_n_out" width="1" type="Output" output_name="memory_tcm_chipselect_n_out" output_enable_name="" input_name="" /></master></slave></info>]]></parameter>
+ </module>
+ <module
+   name="memory_sharer"
+   kind="altera_tristate_conduit_pin_sharer"
+   version="15.1"
+   enabled="1">
+  <parameter name="AUTO_CLK_CLOCK_DOMAIN" value="1" />
+  <parameter name="AUTO_CLK_CLOCK_RATE" value="125000000" />
+  <parameter name="AUTO_CLK_RESET_DOMAIN" value="1" />
+  <parameter name="AUTO_DEVICE" value="5CGXFC5C6F27C7" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone V" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="7_H6" />
+  <parameter name="INTERFACE_INFO"><![CDATA[<info><slave name="tcs0"><master name="memory.tcm"><pin role="write_n" width="1" type="Output" output_name="tcm_write_n_out" output_enable_name="" input_name="" /><pin role="chipselect_n" width="1" type="Output" output_name="tcm_chipselect_n_out" output_enable_name="" input_name="" /><pin role="outputenable_n" width="1" type="Output" output_name="tcm_outputenable_n_out" output_enable_name="" input_name="" /><pin role="" width="1" type="Invalid" output_name="" output_enable_name="" input_name="" /><pin role="address" width="19" type="Output" output_name="tcm_address_out" output_enable_name="" input_name="" /><pin role="byteenable_n" width="2" type="Output" output_name="tcm_byteenable_n_out" output_enable_name="" input_name="" /><pin role="data" width="16" type="Bidirectional" output_name="tcm_data_out" output_enable_name="tcm_data_outen" input_name="tcm_data_in" /></master></slave></info>]]></parameter>
+  <parameter name="MODULE_ORIGIN_LIST">memory.tcm,memory.tcm,memory.tcm,memory.tcm,memory.tcm,memory.tcm</parameter>
+  <parameter name="NUM_INTERFACES" value="1" />
+  <parameter name="SHARED_SIGNAL_LIST" value=",," />
+  <parameter name="SIGNAL_ORIGIN_LIST">address,byteenable_n,outputenable_n,write_n,data,chipselect_n</parameter>
+ </module>
+ <connection kind="clock" version="15.1" start="clk.clk" end="memory_bridge.clk" />
+ <connection kind="clock" version="15.1" start="clk.clk" end="memory_sharer.clk" />
+ <connection kind="clock" version="15.1" start="clk.clk" end="memory.clk" />
+ <connection
+   kind="reset"
+   version="15.1"
+   start="clk.clk_reset"
+   end="memory_bridge.reset" />
+ <connection
+   kind="reset"
+   version="15.1"
+   start="clk.clk_reset"
+   end="memory_sharer.reset" />
+ <connection kind="reset" version="15.1" start="clk.clk_reset" end="memory.reset" />
+ <connection
+   kind="tristate_conduit"
+   version="15.1"
+   start="memory_sharer.tcm"
+   end="memory_bridge.tcs" />
+ <connection
+   kind="tristate_conduit"
+   version="15.1"
+   start="memory.tcm"
+   end="memory_sharer.tcs0" />
+ <interconnectRequirement for="$system" name="qsys_mm.clockCrossingAdapter" value="HANDSHAKE" />
+ <interconnectRequirement for="$system" name="qsys_mm.enableEccProtection" value="FALSE" />
+ <interconnectRequirement for="$system" name="qsys_mm.insertDefaultSlave" value="FALSE" />
+ <interconnectRequirement for="$system" name="qsys_mm.maxAdditionalLatency" value="1" />
+</system>

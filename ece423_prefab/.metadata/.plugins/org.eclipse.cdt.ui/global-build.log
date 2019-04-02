@@ -1,0 +1,1785 @@
+22:29:28 **** Build of configuration Nios II for project lab3_cpu0 ****
+make all 
+Info: Building ../lab3_cpu0_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab3_cpu0_bsp/
+[BSP build complete]
+[lab3_cpu0 build complete]
+22:29:57 **** Build of configuration Nios II for project lab3_cpu1 ****
+make all 
+Info: Building ../lab3_cpu1_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab3_cpu1_bsp/
+[BSP build complete]
+[lab3_cpu1 build complete]
+22:29:58 **** Incremental Build of configuration Nios II for project lab3_cpu1 ****
+make all 
+Info: Building ../lab3_cpu1_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab3_cpu1_bsp/
+[BSP build complete]
+[lab3_cpu1 build complete]
+22:33:12 **** Incremental Build of configuration Nios II for project lab3_cpu1 ****
+make all 
+Info: Building ../lab3_cpu1_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab3_cpu1_bsp/
+[BSP build complete]
+[lab3_cpu1 build complete]
+22:33:24 **** Incremental Build of configuration Nios II for project lab3_cpu1 ****
+make all 
+Info: Building ../lab3_cpu1_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab3_cpu1_bsp/
+[BSP build complete]
+[lab3_cpu1 build complete]
+22:35:14 **** Incremental Build of configuration Nios II for project lab3_cpu1 ****
+make all 
+Info: Building ../lab3_cpu1_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab3_cpu1_bsp/
+[BSP build complete]
+[lab3_cpu1 build complete]
+22:37:16 **** Clean-only build of configuration Nios II for project lab1_bsp ****
+make clean 
+[BSP clean complete]
+22:37:17 **** Clean-only build of configuration Nios II for project lab3_cpu0 ****
+make clean 
+[lab3_cpu0 clean complete]
+22:37:17 **** Clean-only build of configuration Nios II for project lab3_cpu1 ****
+make clean 
+[lab3_cpu1 clean complete]
+22:37:17 **** Clean-only build of configuration Nios II for project lab3_cpu1_bsp ****
+make clean 
+[BSP clean complete]
+22:37:18 **** Build of configuration Nios II for project lab1_bsp ****
+make all 
+Compiling alt_alarm_start.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_alarm_start.o HAL/src/alt_alarm_start.c
+Compiling alt_busy_sleep.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_busy_sleep.o HAL/src/alt_busy_sleep.c
+Compiling alt_close.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_close.o HAL/src/alt_close.c
+Compiling alt_dcache_flush.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_dcache_flush.o HAL/src/alt_dcache_flush.c
+Compiling alt_dcache_flush_all.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_dcache_flush_all.o HAL/src/alt_dcache_flush_all.c
+Compiling alt_dcache_flush_no_writeback.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_dcache_flush_no_writeback.o HAL/src/alt_dcache_flush_no_writeback.c
+Compiling alt_dev.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_dev.o HAL/src/alt_dev.c
+Compiling alt_dev_llist_insert.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_dev_llist_insert.o HAL/src/alt_dev_llist_insert.c
+Compiling alt_dma_rxchan_open.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_dma_rxchan_open.o HAL/src/alt_dma_rxchan_open.c
+Compiling alt_dma_txchan_open.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_dma_txchan_open.o HAL/src/alt_dma_txchan_open.c
+Compiling alt_do_ctors.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_do_ctors.o HAL/src/alt_do_ctors.c
+Compiling alt_do_dtors.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_do_dtors.o HAL/src/alt_do_dtors.c
+Compiling alt_ecc_fatal_entry.S...
+nios2-elf-gcc -MP -MMD -c   -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_ecc_fatal_entry.o HAL/src/alt_ecc_fatal_entry.S
+Compiling alt_ecc_fatal_exception.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_ecc_fatal_exception.o HAL/src/alt_ecc_fatal_exception.c
+Compiling alt_env_lock.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_env_lock.o HAL/src/alt_env_lock.c
+Compiling alt_environ.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_environ.o HAL/src/alt_environ.c
+Compiling alt_errno.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_errno.o HAL/src/alt_errno.c
+Compiling alt_exception_entry.S...
+nios2-elf-gcc -MP -MMD -c   -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_exception_entry.o HAL/src/alt_exception_entry.S
+Compiling alt_exception_muldiv.S...
+nios2-elf-gcc -MP -MMD -c   -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_exception_muldiv.o HAL/src/alt_exception_muldiv.S
+Compiling alt_exception_trap.S...
+nios2-elf-gcc -MP -MMD -c   -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_exception_trap.o HAL/src/alt_exception_trap.S
+Compiling alt_execve.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_execve.o HAL/src/alt_execve.c
+Compiling alt_exit.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_exit.o HAL/src/alt_exit.c
+Compiling alt_fcntl.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_fcntl.o HAL/src/alt_fcntl.c
+Compiling alt_fd_lock.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_fd_lock.o HAL/src/alt_fd_lock.c
+Compiling alt_fd_unlock.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_fd_unlock.o HAL/src/alt_fd_unlock.c
+Compiling alt_find_dev.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_find_dev.o HAL/src/alt_find_dev.c
+Compiling alt_find_file.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_find_file.o HAL/src/alt_find_file.c
+Compiling alt_flash_dev.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_flash_dev.o HAL/src/alt_flash_dev.c
+Compiling alt_fork.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_fork.o HAL/src/alt_fork.c
+Compiling alt_fs_reg.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_fs_reg.o HAL/src/alt_fs_reg.c
+Compiling alt_fstat.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_fstat.o HAL/src/alt_fstat.c
+Compiling alt_get_fd.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_get_fd.o HAL/src/alt_get_fd.c
+Compiling alt_getchar.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_getchar.o HAL/src/alt_getchar.c
+Compiling alt_getpid.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_getpid.o HAL/src/alt_getpid.c
+Compiling alt_gettod.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_gettod.o HAL/src/alt_gettod.c
+Compiling alt_gmon.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_gmon.o HAL/src/alt_gmon.c
+Compiling alt_icache_flush.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_icache_flush.o HAL/src/alt_icache_flush.c
+Compiling alt_icache_flush_all.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_icache_flush_all.o HAL/src/alt_icache_flush_all.c
+Compiling alt_iic.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_iic.o HAL/src/alt_iic.c
+Compiling alt_iic_isr_register.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_iic_isr_register.o HAL/src/alt_iic_isr_register.c
+Compiling alt_instruction_exception_entry.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_instruction_exception_entry.o HAL/src/alt_instruction_exception_entry.c
+Compiling alt_instruction_exception_register.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_instruction_exception_register.o HAL/src/alt_instruction_exception_register.c
+Compiling alt_io_redirect.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_io_redirect.o HAL/src/alt_io_redirect.c
+Compiling alt_ioctl.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_ioctl.o HAL/src/alt_ioctl.c
+Compiling alt_irq_entry.S...
+nios2-elf-gcc -MP -MMD -c   -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_irq_entry.o HAL/src/alt_irq_entry.S
+Compiling alt_irq_handler.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_irq_handler.o HAL/src/alt_irq_handler.c
+Compiling alt_irq_register.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_irq_register.o HAL/src/alt_irq_register.c
+Compiling alt_irq_vars.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_irq_vars.o HAL/src/alt_irq_vars.c
+Compiling alt_isatty.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_isatty.o HAL/src/alt_isatty.c
+Compiling alt_kill.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_kill.o HAL/src/alt_kill.c
+Compiling alt_link.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_link.o HAL/src/alt_link.c
+Compiling alt_load.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_load.o HAL/src/alt_load.c
+Compiling alt_log_macro.S...
+nios2-elf-gcc -MP -MMD -c   -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_log_macro.o HAL/src/alt_log_macro.S
+Compiling alt_log_printf.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_log_printf.o HAL/src/alt_log_printf.c
+Compiling alt_lseek.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_lseek.o HAL/src/alt_lseek.c
+Compiling alt_main.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_main.o HAL/src/alt_main.c
+Compiling alt_malloc_lock.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_malloc_lock.o HAL/src/alt_malloc_lock.c
+Compiling alt_mcount.S...
+nios2-elf-gcc -MP -MMD -c   -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_mcount.o HAL/src/alt_mcount.S
+Compiling alt_open.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_open.o HAL/src/alt_open.c
+Compiling alt_printf.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_printf.o HAL/src/alt_printf.c
+Compiling alt_putchar.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_putchar.o HAL/src/alt_putchar.c
+Compiling alt_putcharbuf.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_putcharbuf.o HAL/src/alt_putcharbuf.c
+Compiling alt_putstr.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_putstr.o HAL/src/alt_putstr.c
+Compiling alt_read.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_read.o HAL/src/alt_read.c
+Compiling alt_release_fd.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_release_fd.o HAL/src/alt_release_fd.c
+Compiling alt_remap_cached.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_remap_cached.o HAL/src/alt_remap_cached.c
+Compiling alt_remap_uncached.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_remap_uncached.o HAL/src/alt_remap_uncached.c
+Compiling alt_rename.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_rename.o HAL/src/alt_rename.c
+Compiling alt_sbrk.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_sbrk.o HAL/src/alt_sbrk.c
+Compiling alt_settod.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_settod.o HAL/src/alt_settod.c
+Compiling alt_software_exception.S...
+nios2-elf-gcc -MP -MMD -c   -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_software_exception.o HAL/src/alt_software_exception.S
+Compiling alt_stat.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_stat.o HAL/src/alt_stat.c
+Compiling alt_tick.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_tick.o HAL/src/alt_tick.c
+Compiling alt_times.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_times.o HAL/src/alt_times.c
+Compiling alt_uncached_free.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_uncached_free.o HAL/src/alt_uncached_free.c
+Compiling alt_uncached_malloc.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_uncached_malloc.o HAL/src/alt_uncached_malloc.c
+Compiling alt_unlink.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_unlink.o HAL/src/alt_unlink.c
+Compiling alt_usleep.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_usleep.o HAL/src/alt_usleep.c
+Compiling alt_wait.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_wait.o HAL/src/alt_wait.c
+Compiling alt_write.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_write.o HAL/src/alt_write.c
+Compiling altera_nios2_gen2_irq.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/altera_nios2_gen2_irq.o HAL/src/altera_nios2_gen2_irq.c
+Compiling crt0.S...
+nios2-elf-gcc -MP -MMD -c   -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/crt0.o HAL/src/crt0.S
+Compiling alt_sys_init.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/alt_sys_init.o alt_sys_init.c
+alt_sys_init.c:74:1: warning: initialization from incompatible pointer type
+ ALTERA_AVALON_MAILBOX_SIMPLE_INSTANCE ( MAILBOX_SIMPLE_0_1, mailbox_simple_0_1);
+ ^
+alt_sys_init.c:74:1: warning: (near initialization for 'mailbox_simple_0_1.dev.open')
+alt_sys_init.c:74:1: warning: initialization from incompatible pointer type
+alt_sys_init.c:74:1: warning: (near initialization for 'mailbox_simple_0_1.dev.close')
+alt_sys_init.c:74:1: warning: braces around scalar initializer
+alt_sys_init.c:74:1: warning: (near initialization for 'mailbox_simple_0_1.base')
+alt_sys_init.c:75:1: warning: initialization from incompatible pointer type
+ ALTERA_AVALON_MAILBOX_SIMPLE_INSTANCE ( MAILBOX_SIMPLE_1_0, mailbox_simple_1_0);
+ ^
+alt_sys_init.c:75:1: warning: (near initialization for 'mailbox_simple_1_0.dev.open')
+alt_sys_init.c:75:1: warning: initialization from incompatible pointer type
+alt_sys_init.c:75:1: warning: (near initialization for 'mailbox_simple_1_0.dev.close')
+alt_sys_init.c:75:1: warning: braces around scalar initializer
+alt_sys_init.c:75:1: warning: (near initialization for 'mailbox_simple_1_0.base')
+Compiling altera_avalon_jtag_uart_fd.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/drivers/src/altera_avalon_jtag_uart_fd.o drivers/src/altera_avalon_jtag_uart_fd.c
+Compiling altera_avalon_jtag_uart_init.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/drivers/src/altera_avalon_jtag_uart_init.o drivers/src/altera_avalon_jtag_uart_init.c
+Compiling altera_avalon_jtag_uart_ioctl.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/drivers/src/altera_avalon_jtag_uart_ioctl.o drivers/src/altera_avalon_jtag_uart_ioctl.c
+Compiling altera_avalon_jtag_uart_read.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/drivers/src/altera_avalon_jtag_uart_read.o drivers/src/altera_avalon_jtag_uart_read.c
+Compiling altera_avalon_jtag_uart_write.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/drivers/src/altera_avalon_jtag_uart_write.o drivers/src/altera_avalon_jtag_uart_write.c
+Compiling altera_avalon_mailbox_simple.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/drivers/src/altera_avalon_mailbox_simple.o drivers/src/altera_avalon_mailbox_simple.c
+Compiling altera_avalon_sysid_qsys.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/drivers/src/altera_avalon_sysid_qsys.o drivers/src/altera_avalon_sysid_qsys.c
+Compiling altera_avalon_timer_sc.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/drivers/src/altera_avalon_timer_sc.o drivers/src/altera_avalon_timer_sc.c
+Compiling altera_avalon_timer_ts.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/drivers/src/altera_avalon_timer_ts.o drivers/src/altera_avalon_timer_ts.c
+Compiling altera_avalon_timer_vars.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/drivers/src/altera_avalon_timer_vars.o drivers/src/altera_avalon_timer_vars.c
+Compiling altera_msgdma.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/drivers/src/altera_msgdma.o drivers/src/altera_msgdma.c
+Creating libhal_bsp.a...
+rm -f -f libhal_bsp.a
+nios2-elf-ar -src libhal_bsp.a obj/HAL/src/alt_alarm_start.o obj/HAL/src/alt_busy_sleep.o obj/HAL/src/alt_close.o obj/HAL/src/alt_dcache_flush.o obj/HAL/src/alt_dcache_flush_all.o obj/HAL/src/alt_dcache_flush_no_writeback.o obj/HAL/src/alt_dev.o obj/HAL/src/alt_dev_llist_insert.o obj/HAL/src/alt_dma_rxchan_open.o obj/HAL/src/alt_dma_txchan_open.o obj/HAL/src/alt_do_ctors.o obj/HAL/src/alt_do_dtors.o obj/HAL/src/alt_ecc_fatal_entry.o obj/HAL/src/alt_ecc_fatal_exception.o obj/HAL/src/alt_env_lock.o obj/HAL/src/alt_environ.o obj/HAL/src/alt_errno.o obj/HAL/src/alt_exception_entry.o obj/HAL/src/alt_exception_muldiv.o obj/HAL/src/alt_exception_trap.o obj/HAL/src/alt_execve.o obj/HAL/src/alt_exit.o obj/HAL/src/alt_fcntl.o obj/HAL/src/alt_fd_lock.o obj/HAL/src/alt_fd_unlock.o obj/HAL/src/alt_find_dev.o obj/HAL/src/alt_find_file.o obj/HAL/src/alt_flash_dev.o obj/HAL/src/alt_fork.o obj/HAL/src/alt_fs_reg.o obj/HAL/src/alt_fstat.o obj/HAL/src/alt_get_fd.o obj/HAL/src/alt_getchar.o obj/HAL/src/alt_getpid.o obj/HAL/src/alt_gettod.o obj/HAL/src/alt_gmon.o obj/HAL/src/alt_icache_flush.o obj/HAL/src/alt_icache_flush_all.o obj/HAL/src/alt_iic.o obj/HAL/src/alt_iic_isr_register.o obj/HAL/src/alt_instruction_exception_entry.o obj/HAL/src/alt_instruction_exception_register.o obj/HAL/src/alt_io_redirect.o obj/HAL/src/alt_ioctl.o obj/HAL/src/alt_irq_entry.o obj/HAL/src/alt_irq_handler.o obj/HAL/src/alt_irq_register.o obj/HAL/src/alt_irq_vars.o obj/HAL/src/alt_isatty.o obj/HAL/src/alt_kill.o obj/HAL/src/alt_link.o obj/HAL/src/alt_load.o obj/HAL/src/alt_log_macro.o obj/HAL/src/alt_log_printf.o obj/HAL/src/alt_lseek.o obj/HAL/src/alt_main.o obj/HAL/src/alt_malloc_lock.o obj/HAL/src/alt_mcount.o obj/HAL/src/alt_open.o obj/HAL/src/alt_printf.o obj/HAL/src/alt_putchar.o obj/HAL/src/alt_putcharbuf.o obj/HAL/src/alt_putstr.o obj/HAL/src/alt_read.o obj/HAL/src/alt_release_fd.o obj/HAL/src/alt_remap_cached.o obj/HAL/src/alt_remap_uncached.o obj/HAL/src/alt_rename.o obj/HAL/src/alt_sbrk.o obj/HAL/src/alt_settod.o obj/HAL/src/alt_software_exception.o obj/HAL/src/alt_stat.o obj/HAL/src/alt_tick.o obj/HAL/src/alt_times.o obj/HAL/src/alt_uncached_free.o obj/HAL/src/alt_uncached_malloc.o obj/HAL/src/alt_unlink.o obj/HAL/src/alt_usleep.o obj/HAL/src/alt_wait.o obj/HAL/src/alt_write.o obj/HAL/src/altera_nios2_gen2_irq.o obj/HAL/src/crt0.o obj/alt_sys_init.o obj/drivers/src/altera_avalon_jtag_uart_fd.o obj/drivers/src/altera_avalon_jtag_uart_init.o obj/drivers/src/altera_avalon_jtag_uart_ioctl.o obj/drivers/src/altera_avalon_jtag_uart_read.o obj/drivers/src/altera_avalon_jtag_uart_write.o obj/drivers/src/altera_avalon_mailbox_simple.o obj/drivers/src/altera_avalon_sysid_qsys.o obj/drivers/src/altera_avalon_timer_sc.o obj/drivers/src/altera_avalon_timer_ts.o obj/drivers/src/altera_avalon_timer_vars.o obj/drivers/src/altera_msgdma.o
+[BSP build complete]
+22:37:29 **** Build of configuration Nios II for project lab3_cpu0 ****
+make all 
+Info: Building ../lab3_cpu0_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab3_cpu0_bsp/
+[BSP build complete]
+Info: Compiling common/tables.c to obj/default/common/tables.o
+nios2-elf-gcc -xc -MP -MMD -c -I../lab3_cpu0_bsp//HAL/inc -I../lab3_cpu0_bsp/ -I../lab3_cpu0_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall -std=c99  -mhw-div -mhw-mul -mno-hw-mulx  -o obj/default/common/tables.o common/tables.c
+Info: Compiling common/util.c to obj/default/common/util.o
+nios2-elf-gcc -xc -MP -MMD -c -I../lab3_cpu0_bsp//HAL/inc -I../lab3_cpu0_bsp/ -I../lab3_cpu0_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall -std=c99  -mhw-div -mhw-mul -mno-hw-mulx  -o obj/default/common/util.o common/util.c
+Info: Compiling decoder/idct.c to obj/default/decoder/idct.o
+nios2-elf-gcc -xc -MP -MMD -c -I../lab3_cpu0_bsp//HAL/inc -I../lab3_cpu0_bsp/ -I../lab3_cpu0_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall -std=c99  -mhw-div -mhw-mul -mno-hw-mulx  -o obj/default/decoder/idct.o decoder/idct.c
+In file included from decoder/mjpeg423_decoder.h:17:0,
+                 from decoder/idct.c:10:
+decoder/../ece423_sd/ece423_sd.h:37:0: warning: "TRUE" redefined
+ #define TRUE    1
+ ^
+In file included from decoder/mjpeg423_decoder.h:15:0,
+                 from decoder/idct.c:10:
+decoder/../common/mjpeg423_types.h:17:0: note: this is the location of the previous definition
+ #define TRUE !FALSE
+ ^
+In file included from decoder/mjpeg423_decoder.h:17:0,
+                 from decoder/idct.c:10:
+decoder/../ece423_sd/ece423_sd.h:38:0: warning: "FALSE" redefined
+ #define FALSE   0
+ ^
+In file included from decoder/mjpeg423_decoder.h:15:0,
+                 from decoder/idct.c:10:
+decoder/../common/mjpeg423_types.h:16:0: note: this is the location of the previous definition
+ #define FALSE (0)
+ ^
+Info: Compiling decoder/lossless_decode.c to obj/default/decoder/lossless_decode.o
+nios2-elf-gcc -xc -MP -MMD -c -I../lab3_cpu0_bsp//HAL/inc -I../lab3_cpu0_bsp/ -I../lab3_cpu0_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall -std=c99  -mhw-div -mhw-mul -mno-hw-mulx  -o obj/default/decoder/lossless_decode.o decoder/lossless_decode.c
+In file included from decoder/mjpeg423_decoder.h:17:0,
+                 from decoder/lossless_decode.c:11:
+decoder/../ece423_sd/ece423_sd.h:37:0: warning: "TRUE" redefined
+ #define TRUE    1
+ ^
+In file included from decoder/lossless_decode.c:10:0:
+decoder/../common/mjpeg423_types.h:17:0: note: this is the location of the previous definition
+ #define TRUE !FALSE
+ ^
+In file included from decoder/mjpeg423_decoder.h:17:0,
+                 from decoder/lossless_decode.c:11:
+decoder/../ece423_sd/ece423_sd.h:38:0: warning: "FALSE" redefined
+ #define FALSE   0
+ ^
+In file included from decoder/lossless_decode.c:10:0:
+decoder/../common/mjpeg423_types.h:16:0: note: this is the location of the previous definition
+ #define FALSE (0)
+ ^
+Info: Compiling decoder/mjpeg423_decoder.c to obj/default/decoder/mjpeg423_decoder.o
+nios2-elf-gcc -xc -MP -MMD -c -I../lab3_cpu0_bsp//HAL/inc -I../lab3_cpu0_bsp/ -I../lab3_cpu0_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall -std=c99  -mhw-div -mhw-mul -mno-hw-mulx  -o obj/default/decoder/mjpeg423_decoder.o decoder/mjpeg423_decoder.c
+In file included from decoder/mjpeg423_decoder.h:17:0,
+                 from decoder/mjpeg423_decoder.c:16:
+decoder/../ece423_sd/ece423_sd.h:37:0: warning: "TRUE" redefined
+ #define TRUE    1
+ ^
+In file included from decoder/mjpeg423_decoder.c:15:0:
+decoder/../common/mjpeg423_types.h:17:0: note: this is the location of the previous definition
+ #define TRUE !FALSE
+ ^
+In file included from decoder/mjpeg423_decoder.h:17:0,
+                 from decoder/mjpeg423_decoder.c:16:
+decoder/../ece423_sd/ece423_sd.h:38:0: warning: "FALSE" redefined
+ #define FALSE   0
+ ^
+In file included from decoder/mjpeg423_decoder.c:15:0:
+decoder/../common/mjpeg423_types.h:16:0: note: this is the location of the previous definition
+ #define FALSE (0)
+ ^
+decoder/mjpeg423_decoder.c:20:0: warning: "DEBUG" redefined
+ #define DEBUG 0
+ ^
+In file included from decoder/../ece423_sd/ece423_sd.h:60:0,
+                 from decoder/mjpeg423_decoder.h:17,
+                 from decoder/mjpeg423_decoder.c:16:
+decoder/../ece423_sd/debug.h:25:0: note: this is the location of the previous definition
+     #define DEBUG(x)               {myprintf x;}  // standard in/out, specifed in project (it could be uart, jtag, or lcd)
+ ^
+decoder/mjpeg423_decoder.c: In function 'mjpeg423_decode':
+decoder/mjpeg423_decoder.c:182:13: warning: assignment makes integer from pointer without a cast
+  message[1] = msg;
+             ^
+decoder/mjpeg423_decoder.c:192:5: warning: implicit declaration of function 'memalign' [-Wimplicit-function-declaration]
+     if((YDCAC = (dct_block_t*)memalign(128, hYb_size * wYb_size * 64 * sizeof(DCTELEM))) == NULL)
+     ^
+decoder/mjpeg423_decoder.c:334:14: warning: assignment makes integer from pointer without a cast
+   message[1] = msg;
+              ^
+decoder/mjpeg423_decoder.c:361:54: warning: passing argument 2 of 'altera_avalon_mailbox_retrieve_poll' from incompatible pointer type
+    altera_avalon_mailbox_retrieve_poll(receive_cpu1, message, 0);
+                                                      ^
+In file included from decoder/mjpeg423_decoder.c:12:0:
+../lab3_cpu0_bsp//drivers/inc/altera_avalon_mailbox_simple.h:78:5: note: expected 'alt_u32 *' but argument is of type 'uint *'
+ int altera_avalon_mailbox_retrieve_poll (altera_avalon_mailbox_dev* dev,alt_u32* msg_ptr, alt_u32 timeout);
+     ^
+decoder/mjpeg423_decoder.c:102:6: warning: variable 'frame_index_cpu1' set but not used [-Wunused-but-set-variable]
+  int frame_index_cpu1;
+      ^
+Info: Compiling decoder/ycbcr_to_rgb.c to obj/default/decoder/ycbcr_to_rgb.o
+nios2-elf-gcc -xc -MP -MMD -c -I../lab3_cpu0_bsp//HAL/inc -I../lab3_cpu0_bsp/ -I../lab3_cpu0_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall -std=c99  -mhw-div -mhw-mul -mno-hw-mulx  -o obj/default/decoder/ycbcr_to_rgb.o decoder/ycbcr_to_rgb.c
+In file included from decoder/mjpeg423_decoder.h:17:0,
+                 from decoder/ycbcr_to_rgb.c:10:
+decoder/../ece423_sd/ece423_sd.h:37:0: warning: "TRUE" redefined
+ #define TRUE    1
+ ^
+In file included from decoder/mjpeg423_decoder.h:15:0,
+                 from decoder/ycbcr_to_rgb.c:10:
+decoder/../common/mjpeg423_types.h:17:0: note: this is the location of the previous definition
+ #define TRUE !FALSE
+ ^
+In file included from decoder/mjpeg423_decoder.h:17:0,
+                 from decoder/ycbcr_to_rgb.c:10:
+decoder/../ece423_sd/ece423_sd.h:38:0: warning: "FALSE" redefined
+ #define FALSE   0
+ ^
+In file included from decoder/mjpeg423_decoder.h:15:0,
+                 from decoder/ycbcr_to_rgb.c:10:
+decoder/../common/mjpeg423_types.h:16:0: note: this is the location of the previous definition
+ #define FALSE (0)
+ ^
+decoder/ycbcr_to_rgb.c: In function 'ycbcr_to_rgb':
+decoder/ycbcr_to_rgb.c:61:16: warning: assignment from incompatible pointer type
+          pixel = &rgbblock[index];
+                ^
+Info: Compiling ece423_sd/FatFileSystem.c to obj/default/ece423_sd/FatFileSystem.o
+nios2-elf-gcc -xc -MP -MMD -c -I../lab3_cpu0_bsp//HAL/inc -I../lab3_cpu0_bsp/ -I../lab3_cpu0_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall -std=c99  -mhw-div -mhw-mul -mno-hw-mulx  -o obj/default/ece423_sd/FatFileSystem.o ece423_sd/FatFileSystem.c
+ece423_sd/FatFileSystem.c: In function 'Fat_Mount':
+ece423_sd/FatFileSystem.c:76:3: warning: return makes pointer from integer without a cast
+   return -1;
+   ^
+ece423_sd/FatFileSystem.c: In function 'Fat_FileOpen':
+ece423_sd/FatFileSystem.c:320:24: warning: pointer targets in assignment differ in signedness [-Wpointer-sign]
+                 pData8 = FileContext.szName;
+                        ^
+ece423_sd/FatFileSystem.c: In function 'Fat_FileRead':
+ece423_sd/FatFileSystem.c:373:9: warning: unused variable 's' [-Wunused-variable]
+     int s;
+         ^
+ece423_sd/FatFileSystem.c: In function 'Fat_FileSeek':
+ece423_sd/FatFileSystem.c:585:18: warning: variable 'pVol' set but not used [-Wunused-but-set-variable]
+     VOLUME_INFO *pVol;
+                  ^
+ece423_sd/FatFileSystem.c: In function 'Fat_SpeedTest':
+ece423_sd/FatFileSystem.c:639:66: warning: pointer targets in passing argument 3 of 'pVol->ReadBlock512' differ in signedness [-Wpointer-sign]
+         bSuccess = pVol->ReadBlock512(pVol->DiskHandle, nSecter, szBlock);
+                                                                  ^
+ece423_sd/FatFileSystem.c:639:66: note: expected 'alt_u8 *' but argument is of type 'char *'
+Info: Compiling ece423_sd/FatInternal.c to obj/default/ece423_sd/FatInternal.o
+nios2-elf-gcc -xc -MP -MMD -c -I../lab3_cpu0_bsp//HAL/inc -I../lab3_cpu0_bsp/ -I../lab3_cpu0_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall -std=c99  -mhw-div -mhw-mul -mno-hw-mulx  -o obj/default/ece423_sd/FatInternal.o ece423_sd/FatInternal.c
+ece423_sd/FatInternal.c: In function 'fatNextCluster':
+ece423_sd/FatInternal.c:106:5: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+     NextCluster = *(alt_u32*)(pVol->FAT_Data + (ThisCluster%nFatEntryPerSecter)*nFatEntrySize);
+     ^
+ece423_sd/FatInternal.c:109:5: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+     NextCluster = *(alt_u16 *)(pVol->FAT_Data + (ThisCluster%nFatEntryPerSecter)*nFatEntrySize);
+     ^
+ece423_sd/FatInternal.c:123:3: warning: format '%d' expects argument of type 'int', but argument 2 has type 'alt_u32' [-Wformat=]
+   printf("Error getting next cluster (%d)\n", NextCluster);
+   ^
+ece423_sd/FatInternal.c:123:3: warning: format '%d' expects argument of type 'int', but argument 2 has type 'alt_u32' [-Wformat=]
+ece423_sd/FatInternal.c: In function 'fatDumpDate':
+ece423_sd/FatInternal.c:217:22: warning: variable 'Day' set but not used [-Wunused-but-set-variable]
+     int Year, Month, Day;
+                      ^
+ece423_sd/FatInternal.c:217:15: warning: variable 'Month' set but not used [-Wunused-but-set-variable]
+     int Year, Month, Day;
+               ^
+ece423_sd/FatInternal.c:217:9: warning: variable 'Year' set but not used [-Wunused-but-set-variable]
+     int Year, Month, Day;
+         ^
+ece423_sd/FatInternal.c: In function 'fatDumpTime':
+ece423_sd/FatInternal.c:225:13: warning: variable 'S' set but not used [-Wunused-but-set-variable]
+     int H,M,S;
+             ^
+ece423_sd/FatInternal.c:225:11: warning: variable 'M' set but not used [-Wunused-but-set-variable]
+     int H,M,S;
+           ^
+ece423_sd/FatInternal.c:225:9: warning: variable 'H' set but not used [-Wunused-but-set-variable]
+     int H,M,S;
+         ^
+ece423_sd/FatInternal.c: In function 'fatMount':
+ece423_sd/FatInternal.c:419:12: warning: variable 'nFatTableSize' set but not used [-Wunused-but-set-variable]
+     alt_32 nFatTableSize,nFatTableSecterNum;//, i;
+            ^
+ece423_sd/FatInternal.c: In function 'fatMountSdcard':
+ece423_sd/FatInternal.c:555:22: warning: assignment from incompatible pointer type
+     pVol->ReadBlocks = SD_ReadBlocks;
+                      ^
+ece423_sd/FatInternal.c: In function 'fat16ClusterType':
+ece423_sd/FatInternal.c:68:5: warning: 'Type' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     return Type;        
+     ^
+ece423_sd/FatInternal.c: In function 'fat32ClusterType':
+ece423_sd/FatInternal.c:87:5: warning: 'Type' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     return Type;        
+     ^
+ece423_sd/FatInternal.c: In function 'fatNextCluster':
+ece423_sd/FatInternal.c:112:43: warning: 'Type' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    if (ClusterType != CLUSTER_NEXT_INFILE && ClusterType != CLUSTER_LAST_INFILE)
+                                           ^
+ece423_sd/FatInternal.c:123:3: warning: 'NextCluster' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   printf("Error getting next cluster (%d)\n", NextCluster);
+   ^
+ece423_sd/FatInternal.c: In function 'fatFindUnusedCluster':
+ece423_sd/FatInternal.c:151:16: warning: 'Type' may be used uninitialized in this function [-Wmaybe-uninitialized]
+             if (ClusterType == CLUSTER_UNUSED){
+                ^
+ece423_sd/FatInternal.c: In function 'fatDelClusterList':
+ece423_sd/FatInternal.c:193:52: warning: 'Type' is used uninitialized in this function [-Wuninitialized]
+             if (ClusterType != CLUSTER_NEXT_INFILE && ClusterType != CLUSTER_LAST_INFILE){
+                                                    ^
+ece423_sd/FatInternal.c:193:52: warning: 'Type' is used uninitialized in this function [-Wuninitialized]
+ece423_sd/FatInternal.c: In function 'fatArray2Value':
+ece423_sd/FatInternal.c:325:5: warning: 'nValue' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     return nValue;
+     ^
+ece423_sd/FatInternal.c: In function 'fatMount':
+ece423_sd/FatInternal.c:320:16: warning: 'nValue' may be used uninitialized in this function [-Wmaybe-uninitialized]
+         nValue <<= 8;
+                ^
+ece423_sd/FatInternal.c:317:13: note: 'nValue' was declared here
+     alt_u32 nValue;
+             ^
+ece423_sd/FatInternal.c:320:16: warning: 'nValue' may be used uninitialized in this function [-Wmaybe-uninitialized]
+         nValue <<= 8;
+                ^
+ece423_sd/FatInternal.c:317:13: note: 'nValue' was declared here
+     alt_u32 nValue;
+             ^
+ece423_sd/FatInternal.c: In function 'fatMountSdcard':
+ece423_sd/FatInternal.c:320:16: warning: 'nValue' may be used uninitialized in this function [-Wmaybe-uninitialized]
+         nValue <<= 8;
+                ^
+ece423_sd/FatInternal.c:317:13: note: 'nValue' was declared here
+     alt_u32 nValue;
+             ^
+ece423_sd/FatInternal.c:320:16: warning: 'nValue' may be used uninitialized in this function [-Wmaybe-uninitialized]
+         nValue <<= 8;
+                ^
+ece423_sd/FatInternal.c:317:13: note: 'nValue' was declared here
+     alt_u32 nValue;
+             ^
+Info: Compiling ece423_sd/debug.c to obj/default/ece423_sd/debug.o
+nios2-elf-gcc -xc -MP -MMD -c -I../lab3_cpu0_bsp//HAL/inc -I../lab3_cpu0_bsp/ -I../lab3_cpu0_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall -std=c99  -mhw-div -mhw-mul -mno-hw-mulx  -o obj/default/ece423_sd/debug.o ece423_sd/debug.c
+ece423_sd/debug.c: In function 'myprintf_hexarray':
+ece423_sd/debug.c:63:17: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+         sprintf(szText, "[%02X]", *(pHex+i));
+                 ^
+In file included from c:\software\altera\15.1\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\stdio.h:29:0,
+                 from ece423_sd/debug.c:33:
+c:\software\altera\15.1\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\stdio.h:257:5: note: expected 'char * restrict' but argument is of type 'unsigned char *'
+ int _EXFUN(sprintf, (char *__restrict, const char *__restrict, ...)
+     ^
+In file included from ece423_sd/ece423_sd.h:60:0,
+                 from ece423_sd/debug.c:35:
+ece423_sd/debug.c:64:16: warning: pointer targets in passing argument 1 of 'myprintf' differ in signedness [-Wpointer-sign]
+         DEBUG((szText));
+                ^
+ece423_sd/debug.h:25:46: note: in definition of macro 'DEBUG'
+     #define DEBUG(x)               {myprintf x;}  // standard in/out, specifed in project (it could be uart, jtag, or lcd)
+                                              ^
+ece423_sd/debug.c:44:5: note: expected 'char *' but argument is of type 'unsigned char *'
+ int myprintf(char *format, ...){
+     ^
+Info: Compiling ece423_sd/mmc.c to obj/default/ece423_sd/mmc.o
+nios2-elf-gcc -xc -MP -MMD -c -I../lab3_cpu0_bsp//HAL/inc -I../lab3_cpu0_bsp/ -I../lab3_cpu0_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall -std=c99  -mhw-div -mhw-mul -mno-hw-mulx  -o obj/default/ece423_sd/mmc.o ece423_sd/mmc.c
+ece423_sd/mmc.c: In function 'sd_switch':
+ece423_sd/mmc.c:325:12: warning: initialization from incompatible pointer type
+  uint* s = resp;
+            ^
+ece423_sd/mmc.c: In function 'sd_change_freq':
+ece423_sd/mmc.c:344:14: warning: initialization discards 'volatile' qualifier from pointer target type
+  uint* scr = alt_uncached_malloc(8);
+              ^
+ece423_sd/mmc.c: In function 'mmc_bread':
+ece423_sd/mmc.c:854:5: warning: format '%lx' expects argument of type 'long unsigned int', but argument 2 has type 'size_t' [-Wformat=]
+     mmc->capacity / mmc->read_bl_len, mmc->capacity, mmc->read_bl_len);
+     ^
+ece423_sd/mmc.c:854:5: warning: format '%lx' expects argument of type 'long unsigned int', but argument 3 has type 'size_t' [-Wformat=]
+ece423_sd/mmc.c:854:5: warning: format '%lx' expects argument of type 'long unsigned int', but argument 2 has type 'size_t' [-Wformat=]
+ece423_sd/mmc.c:854:5: warning: format '%lx' expects argument of type 'long unsigned int', but argument 3 has type 'size_t' [-Wformat=]
+ece423_sd/mmc.c: In function 'print_mmcinfo':
+ece423_sd/mmc.c:890:2: warning: format '%lu' expects argument of type 'long unsigned int', but argument 2 has type 'size_t' [-Wformat=]
+  printf("Capacity: %lu MB\n\r", mmc->capacity / 1024 / 1024);
+  ^
+ece423_sd/mmc.c:890:2: warning: format '%lu' expects argument of type 'long unsigned int', but argument 2 has type 'size_t' [-Wformat=]
+Info: Compiling ece423_sd/ocsdc.c to obj/default/ece423_sd/ocsdc.o
+nios2-elf-gcc -xc -MP -MMD -c -I../lab3_cpu0_bsp//HAL/inc -I../lab3_cpu0_bsp/ -I../lab3_cpu0_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall -std=c99  -mhw-div -mhw-mul -mno-hw-mulx  -o obj/default/ece423_sd/ocsdc.o ece423_sd/ocsdc.c
+Info: Compiling ece423_sd/sd_lib.c to obj/default/ece423_sd/sd_lib.o
+nios2-elf-gcc -xc -MP -MMD -c -I../lab3_cpu0_bsp//HAL/inc -I../lab3_cpu0_bsp/ -I../lab3_cpu0_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall -std=c99  -mhw-div -mhw-mul -mno-hw-mulx  -o obj/default/ece423_sd/sd_lib.o ece423_sd/sd_lib.c
+ece423_sd/sd_lib.c: In function 'SDLIB_Init':
+ece423_sd/sd_lib.c:65:3: warning: implicit declaration of function 'ocsdc_mmc_init' [-Wimplicit-function-declaration]
+   if(!sd_drv){
+   ^
+ece423_sd/sd_lib.c:65:10: warning: assignment makes pointer from integer without a cast
+   if(!sd_drv){
+          ^
+Info: Compiling ece423_vid_ctl/ece423_vid_ctl.c to obj/default/ece423_vid_ctl/ece423_vid_ctl.o
+nios2-elf-gcc -xc -MP -MMD -c -I../lab3_cpu0_bsp//HAL/inc -I../lab3_cpu0_bsp/ -I../lab3_cpu0_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall -std=c99  -mhw-div -mhw-mul -mno-hw-mulx  -o obj/default/ece423_vid_ctl/ece423_vid_ctl.o ece423_vid_ctl/ece423_vid_ctl.c
+ece423_vid_ctl/ece423_vid_ctl.c:27:8: warning: type defaults to 'int' in declaration of 'logo_width'
+ extern logo_width;
+        ^
+ece423_vid_ctl/ece423_vid_ctl.c:28:8: warning: type defaults to 'int' in declaration of 'logo_height'
+ extern logo_height;
+        ^
+ece423_vid_ctl/ece423_vid_ctl.c: In function 'ece423_video_display_init':
+ece423_vid_ctl/ece423_vid_ctl.c:65:16: warning: passing argument 1 of 'decompress' discards 'const' qualifier from pointer target type
+     decompress(font_compressed, font_len, font_glyph_bitmap, font_len_out);
+                ^
+In file included from ece423_vid_ctl/ece423_vid_ctl.c:23:0:
+ece423_vid_ctl/heatshrink/heatshrink.h:12:5: note: expected 'char *' but argument is of type 'const unsigned char *'
+ int decompress(char* in, int in_size, char* out, int out_size);
+     ^
+ece423_vid_ctl/ece423_vid_ctl.c:65:43: warning: passing argument 3 of 'decompress' discards 'const' qualifier from pointer target type
+     decompress(font_compressed, font_len, font_glyph_bitmap, font_len_out);
+                                           ^
+In file included from ece423_vid_ctl/ece423_vid_ctl.c:23:0:
+ece423_vid_ctl/heatshrink/heatshrink.h:12:5: note: expected 'char *' but argument is of type 'const char *'
+ int decompress(char* in, int in_size, char* out, int out_size);
+     ^
+ece423_vid_ctl/ece423_vid_ctl.c:70:16: warning: passing argument 1 of 'decompress' discards 'const' qualifier from pointer target type
+     decompress(logo_compressed, logo_len, logo, logo_len_out);
+                ^
+In file included from ece423_vid_ctl/ece423_vid_ctl.c:23:0:
+ece423_vid_ctl/heatshrink/heatshrink.h:12:5: note: expected 'char *' but argument is of type 'const unsigned char *'
+ int decompress(char* in, int in_size, char* out, int out_size);
+     ^
+ece423_vid_ctl/ece423_vid_ctl.c:70:43: warning: passing argument 3 of 'decompress' from incompatible pointer type
+     decompress(logo_compressed, logo_len, logo, logo_len_out);
+                                           ^
+In file included from ece423_vid_ctl/ece423_vid_ctl.c:23:0:
+ece423_vid_ctl/heatshrink/heatshrink.h:12:5: note: expected 'char *' but argument is of type 'uint *'
+ int decompress(char* in, int in_size, char* out, int out_size);
+     ^
+ece423_vid_ctl/ece423_vid_ctl.c: In function 'ece423_video_display_demo':
+ece423_vid_ctl/ece423_vid_ctl.c:325:16: warning: initialization from incompatible pointer type
+   int* frame = ece423_video_display_get_buffer(display);
+                ^
+ece423_vid_ctl/ece423_vid_ctl.c: In function 'ece423_init_hdmi':
+ece423_vid_ctl/ece423_vid_ctl.c:855:61: warning: passing argument 5 of 'I2C_Read' from incompatible pointer type
+  r = I2C_Read(I2C_SCL_BASE, I2C_SDA_BASE, slave_addr, 0x00, &chip_rev[0]);
+                                                             ^
+In file included from ece423_vid_ctl/ece423_vid_ctl.c:21:0:
+ece423_vid_ctl/i2c.h:39:6: note: expected 'alt_u8 *' but argument is of type 'int *'
+ bool I2C_Read(alt_u32 clk_base, alt_u32 data_base, alt_8 DeviceAddr, alt_u8 ControlAddr, alt_u8 *pControlData);
+      ^
+ece423_vid_ctl/ece423_vid_ctl.c:859:61: warning: passing argument 5 of 'I2C_Read' from incompatible pointer type
+  r = I2C_Read(I2C_SCL_BASE, I2C_SDA_BASE, slave_addr, 0xf6, &chip_id[0]);
+                                                             ^
+In file included from ece423_vid_ctl/ece423_vid_ctl.c:21:0:
+ece423_vid_ctl/i2c.h:39:6: note: expected 'alt_u8 *' but argument is of type 'int *'
+ bool I2C_Read(alt_u32 clk_base, alt_u32 data_base, alt_8 DeviceAddr, alt_u8 ControlAddr, alt_u8 *pControlData);
+      ^
+ece423_vid_ctl/ece423_vid_ctl.c:863:61: warning: passing argument 5 of 'I2C_Read' from incompatible pointer type
+  r = I2C_Read(I2C_SCL_BASE, I2C_SDA_BASE, slave_addr, 0xf5, &chip_id[1]);
+                                                             ^
+In file included from ece423_vid_ctl/ece423_vid_ctl.c:21:0:
+ece423_vid_ctl/i2c.h:39:6: note: expected 'alt_u8 *' but argument is of type 'int *'
+ bool I2C_Read(alt_u32 clk_base, alt_u32 data_base, alt_8 DeviceAddr, alt_u8 ControlAddr, alt_u8 *pControlData);
+      ^
+Info: Compiling ece423_vid_ctl/font.c to obj/default/ece423_vid_ctl/font.o
+nios2-elf-gcc -xc -MP -MMD -c -I../lab3_cpu0_bsp//HAL/inc -I../lab3_cpu0_bsp/ -I../lab3_cpu0_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall -std=c99  -mhw-div -mhw-mul -mno-hw-mulx  -o obj/default/ece423_vid_ctl/font.o ece423_vid_ctl/font.c
+Info: Compiling ece423_vid_ctl/heatshrink/heatshrink.c to obj/default/ece423_vid_ctl/heatshrink/heatshrink.o
+nios2-elf-gcc -xc -MP -MMD -c -I../lab3_cpu0_bsp//HAL/inc -I../lab3_cpu0_bsp/ -I../lab3_cpu0_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall -std=c99  -mhw-div -mhw-mul -mno-hw-mulx  -o obj/default/ece423_vid_ctl/heatshrink/heatshrink.o ece423_vid_ctl/heatshrink/heatshrink.c
+ece423_vid_ctl/heatshrink/heatshrink.c: In function 'decoder_sink_read':
+ece423_vid_ctl/heatshrink/heatshrink.c:26:5: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
+     memset(out_buf, 0, out_sz);
+     ^
+ece423_vid_ctl/heatshrink/heatshrink.c:26:5: warning: incompatible implicit declaration of built-in function 'memset'
+ece423_vid_ctl/heatshrink/heatshrink.c:44:13: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+             memcpy(out_ptr, out_buf, poll_sz);
+             ^
+ece423_vid_ctl/heatshrink/heatshrink.c:44:13: warning: incompatible implicit declaration of built-in function 'memcpy'
+ece423_vid_ctl/heatshrink/heatshrink.c: In function 'decompress':
+ece423_vid_ctl/heatshrink/heatshrink.c:77:26: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+         uint8_t *input = in + done_sz;
+                          ^
+Info: Compiling ece423_vid_ctl/heatshrink/heatshrink_decoder.c to obj/default/ece423_vid_ctl/heatshrink/heatshrink_decoder.o
+nios2-elf-gcc -xc -MP -MMD -c -I../lab3_cpu0_bsp//HAL/inc -I../lab3_cpu0_bsp/ -I../lab3_cpu0_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall -std=c99  -mhw-div -mhw-mul -mno-hw-mulx  -o obj/default/ece423_vid_ctl/heatshrink/heatshrink_decoder.o ece423_vid_ctl/heatshrink/heatshrink_decoder.c
+Info: Compiling ece423_vid_ctl/i2c.c to obj/default/ece423_vid_ctl/i2c.o
+nios2-elf-gcc -xc -MP -MMD -c -I../lab3_cpu0_bsp//HAL/inc -I../lab3_cpu0_bsp/ -I../lab3_cpu0_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall -std=c99  -mhw-div -mhw-mul -mno-hw-mulx  -o obj/default/ece423_vid_ctl/i2c.o ece423_vid_ctl/i2c.c
+Info: Compiling ece423_vid_ctl/uw_logo.c to obj/default/ece423_vid_ctl/uw_logo.o
+nios2-elf-gcc -xc -MP -MMD -c -I../lab3_cpu0_bsp//HAL/inc -I../lab3_cpu0_bsp/ -I../lab3_cpu0_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall -std=c99  -mhw-div -mhw-mul -mno-hw-mulx  -o obj/default/ece423_vid_ctl/uw_logo.o ece423_vid_ctl/uw_logo.c
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../lab3_cpu0_bsp//HAL/inc -I../lab3_cpu0_bsp/ -I../lab3_cpu0_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall -std=c99  -mhw-div -mhw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+In file included from decoder/mjpeg423_decoder.h:17:0,
+                 from main.c:1:
+decoder/../ece423_sd/ece423_sd.h:37:0: warning: "TRUE" redefined
+ #define TRUE    1
+ ^
+In file included from decoder/mjpeg423_decoder.h:15:0,
+                 from main.c:1:
+decoder/../common/mjpeg423_types.h:17:0: note: this is the location of the previous definition
+ #define TRUE !FALSE
+ ^
+In file included from decoder/mjpeg423_decoder.h:17:0,
+                 from main.c:1:
+decoder/../ece423_sd/ece423_sd.h:38:0: warning: "FALSE" redefined
+ #define FALSE   0
+ ^
+In file included from decoder/mjpeg423_decoder.h:15:0,
+                 from main.c:1:
+decoder/../common/mjpeg423_types.h:16:0: note: this is the location of the previous definition
+ #define FALSE (0)
+ ^
+main.c: In function 'begin_file_browsing':
+main.c:48:43: warning: passing argument 2 of 'Fat_FileBrowseBegin' discards 'volatile' qualifier from pointer target type
+  if (Fat_FileBrowseBegin(state.fs_handle, &state.fs_browse_handle) == FALSE)
+                                           ^
+In file included from decoder/../ece423_sd/ece423_sd.h:59:0,
+                 from decoder/mjpeg423_decoder.h:17,
+                 from main.c:1:
+decoder/../ece423_sd/FatFileSystem.h:115:6: note: expected 'struct FAT_BROWSE_HANDLE *' but argument is of type 'volatile struct FAT_BROWSE_HANDLE *'
+ bool Fat_FileBrowseBegin(FAT_HANDLE hFat, FAT_BROWSE_HANDLE *pFatBrowseHandle);
+      ^
+main.c:50:3: warning: implicit declaration of function 'error_and_exit' [-Wimplicit-function-declaration]
+   error_and_exit("could not browse file system");
+   ^
+main.c: In function 'get_next_mpeg_filename':
+main.c:60:26: warning: passing argument 1 of 'Fat_FileBrowseNext' discards 'volatile' qualifier from pointer target type
+   if (Fat_FileBrowseNext(&state.fs_browse_handle, &f_context) == FALSE)
+                          ^
+In file included from decoder/../ece423_sd/ece423_sd.h:59:0,
+                 from decoder/mjpeg423_decoder.h:17,
+                 from main.c:1:
+decoder/../ece423_sd/FatFileSystem.h:116:6: note: expected 'struct FAT_BROWSE_HANDLE *' but argument is of type 'volatile struct FAT_BROWSE_HANDLE *'
+ bool Fat_FileBrowseNext(FAT_BROWSE_HANDLE *pFatBrowseHandle, FILE_CONTEXT *pFileContext);
+      ^
+main.c:63:23: warning: passing argument 1 of 'Fat_FileBrowseNext' discards 'volatile' qualifier from pointer target type
+    Fat_FileBrowseNext(&state.fs_browse_handle, &f_context);  // or else last file is selected twice
+                       ^
+In file included from decoder/../ece423_sd/ece423_sd.h:59:0,
+                 from decoder/mjpeg423_decoder.h:17,
+                 from main.c:1:
+decoder/../ece423_sd/FatFileSystem.h:116:6: note: expected 'struct FAT_BROWSE_HANDLE *' but argument is of type 'volatile struct FAT_BROWSE_HANDLE *'
+ bool Fat_FileBrowseNext(FAT_BROWSE_HANDLE *pFatBrowseHandle, FILE_CONTEXT *pFileContext);
+      ^
+main.c: In function 'setup':
+main.c:79:2: warning: implicit declaration of function 'alt_irq_register' [-Wimplicit-function-declaration]
+  alt_irq_register(KEY_IRQ, (void*)0, button_ISR);  // setup the interrupt vector
+  ^
+Info: Linking lab3_cpu0.elf
+nios2-elf-g++  -T'../lab3_cpu0_bsp//linker.x' -msys-crt0='../lab3_cpu0_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../lab3_cpu0_bsp/   -Wl,-Map=lab3_cpu0.map   -O3 -g -Wall -std=c99  -mhw-div -mhw-mul -mno-hw-mulx  -o lab3_cpu0.elf obj/default/common/tables.o obj/default/common/util.o obj/default/decoder/idct.o obj/default/decoder/lossless_decode.o obj/default/decoder/mjpeg423_decoder.o obj/default/decoder/ycbcr_to_rgb.o obj/default/ece423_sd/FatFileSystem.o obj/default/ece423_sd/FatInternal.o obj/default/ece423_sd/debug.o obj/default/ece423_sd/mmc.o obj/default/ece423_sd/ocsdc.o obj/default/ece423_sd/sd_lib.o obj/default/ece423_vid_ctl/ece423_vid_ctl.o obj/default/ece423_vid_ctl/font.o obj/default/ece423_vid_ctl/heatshrink/heatshrink.o obj/default/ece423_vid_ctl/heatshrink/heatshrink_decoder.o obj/default/ece423_vid_ctl/i2c.o obj/default/ece423_vid_ctl/uw_logo.o obj/default/main.o -lm -msys-lib=m
+nios2-elf-insert lab3_cpu0.elf --thread_model hal --cpu_name cpu_0 --qsys true --simulation_enabled false --id 0 --sidp 0x21101000 --timestamp 1553656304 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name ECE423_QSYS --quartus_project_dir "C:/Users/y983wang/ECE423/ece423_prefab" --jdi C:/Users/y983wang/ECE423/ece423_prefab/software/lab3_cpu0_bsp/../../ECE423_C5G.jdi --sopcinfo C:/Users/y983wang/ECE423/ece423_prefab/software/lab3_cpu0_bsp/../../ECE423_QSYS.sopcinfo
+Info: (lab3_cpu0.elf) 146 KBytes program size (code + initialized data).
+Info:                 262118 KBytes free for stack + heap.
+Info: Creating lab3_cpu0.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source lab3_cpu0.elf >lab3_cpu0.objdump
+[lab3_cpu0 build complete]
+22:37:35 **** Build of configuration Nios II for project lab3_cpu1 ****
+make all 
+Info: Building ../lab3_cpu1_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab3_cpu1_bsp/
+Compiling alt_alarm_start.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_alarm_start.o HAL/src/alt_alarm_start.c
+Compiling alt_busy_sleep.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_busy_sleep.o HAL/src/alt_busy_sleep.c
+Compiling alt_close.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_close.o HAL/src/alt_close.c
+Compiling alt_dcache_flush.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_dcache_flush.o HAL/src/alt_dcache_flush.c
+Compiling alt_dcache_flush_all.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_dcache_flush_all.o HAL/src/alt_dcache_flush_all.c
+Compiling alt_dcache_flush_no_writeback.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_dcache_flush_no_writeback.o HAL/src/alt_dcache_flush_no_writeback.c
+Compiling alt_dev.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_dev.o HAL/src/alt_dev.c
+Compiling alt_dev_llist_insert.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_dev_llist_insert.o HAL/src/alt_dev_llist_insert.c
+Compiling alt_dma_rxchan_open.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_dma_rxchan_open.o HAL/src/alt_dma_rxchan_open.c
+Compiling alt_dma_txchan_open.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_dma_txchan_open.o HAL/src/alt_dma_txchan_open.c
+Compiling alt_do_ctors.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_do_ctors.o HAL/src/alt_do_ctors.c
+Compiling alt_do_dtors.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_do_dtors.o HAL/src/alt_do_dtors.c
+Compiling alt_ecc_fatal_entry.S...
+nios2-elf-gcc -MP -MMD -c   -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_ecc_fatal_entry.o HAL/src/alt_ecc_fatal_entry.S
+Compiling alt_ecc_fatal_exception.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_ecc_fatal_exception.o HAL/src/alt_ecc_fatal_exception.c
+Compiling alt_env_lock.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_env_lock.o HAL/src/alt_env_lock.c
+Compiling alt_environ.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_environ.o HAL/src/alt_environ.c
+Compiling alt_errno.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_errno.o HAL/src/alt_errno.c
+Compiling alt_exception_entry.S...
+nios2-elf-gcc -MP -MMD -c   -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_exception_entry.o HAL/src/alt_exception_entry.S
+Compiling alt_exception_muldiv.S...
+nios2-elf-gcc -MP -MMD -c   -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_exception_muldiv.o HAL/src/alt_exception_muldiv.S
+Compiling alt_exception_trap.S...
+nios2-elf-gcc -MP -MMD -c   -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_exception_trap.o HAL/src/alt_exception_trap.S
+Compiling alt_execve.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_execve.o HAL/src/alt_execve.c
+Compiling alt_exit.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_exit.o HAL/src/alt_exit.c
+Compiling alt_fcntl.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_fcntl.o HAL/src/alt_fcntl.c
+Compiling alt_fd_lock.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_fd_lock.o HAL/src/alt_fd_lock.c
+Compiling alt_fd_unlock.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_fd_unlock.o HAL/src/alt_fd_unlock.c
+Compiling alt_find_dev.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_find_dev.o HAL/src/alt_find_dev.c
+Compiling alt_find_file.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_find_file.o HAL/src/alt_find_file.c
+Compiling alt_flash_dev.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_flash_dev.o HAL/src/alt_flash_dev.c
+Compiling alt_fork.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_fork.o HAL/src/alt_fork.c
+Compiling alt_fs_reg.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_fs_reg.o HAL/src/alt_fs_reg.c
+Compiling alt_fstat.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_fstat.o HAL/src/alt_fstat.c
+Compiling alt_get_fd.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_get_fd.o HAL/src/alt_get_fd.c
+Compiling alt_getchar.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_getchar.o HAL/src/alt_getchar.c
+Compiling alt_getpid.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_getpid.o HAL/src/alt_getpid.c
+Compiling alt_gettod.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_gettod.o HAL/src/alt_gettod.c
+Compiling alt_gmon.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_gmon.o HAL/src/alt_gmon.c
+Compiling alt_icache_flush.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_icache_flush.o HAL/src/alt_icache_flush.c
+Compiling alt_icache_flush_all.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_icache_flush_all.o HAL/src/alt_icache_flush_all.c
+Compiling alt_iic.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_iic.o HAL/src/alt_iic.c
+Compiling alt_iic_isr_register.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_iic_isr_register.o HAL/src/alt_iic_isr_register.c
+Compiling alt_instruction_exception_entry.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_instruction_exception_entry.o HAL/src/alt_instruction_exception_entry.c
+Compiling alt_instruction_exception_register.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_instruction_exception_register.o HAL/src/alt_instruction_exception_register.c
+Compiling alt_io_redirect.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_io_redirect.o HAL/src/alt_io_redirect.c
+Compiling alt_ioctl.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_ioctl.o HAL/src/alt_ioctl.c
+Compiling alt_irq_entry.S...
+nios2-elf-gcc -MP -MMD -c   -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_irq_entry.o HAL/src/alt_irq_entry.S
+Compiling alt_irq_handler.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_irq_handler.o HAL/src/alt_irq_handler.c
+Compiling alt_irq_register.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_irq_register.o HAL/src/alt_irq_register.c
+Compiling alt_irq_vars.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_irq_vars.o HAL/src/alt_irq_vars.c
+Compiling alt_isatty.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_isatty.o HAL/src/alt_isatty.c
+Compiling alt_kill.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_kill.o HAL/src/alt_kill.c
+Compiling alt_link.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_link.o HAL/src/alt_link.c
+Compiling alt_load.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_load.o HAL/src/alt_load.c
+Compiling alt_log_macro.S...
+nios2-elf-gcc -MP -MMD -c   -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_log_macro.o HAL/src/alt_log_macro.S
+Compiling alt_log_printf.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_log_printf.o HAL/src/alt_log_printf.c
+Compiling alt_lseek.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_lseek.o HAL/src/alt_lseek.c
+Compiling alt_main.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_main.o HAL/src/alt_main.c
+Compiling alt_malloc_lock.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_malloc_lock.o HAL/src/alt_malloc_lock.c
+Compiling alt_mcount.S...
+nios2-elf-gcc -MP -MMD -c   -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_mcount.o HAL/src/alt_mcount.S
+Compiling alt_open.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_open.o HAL/src/alt_open.c
+Compiling alt_printf.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_printf.o HAL/src/alt_printf.c
+Compiling alt_putchar.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_putchar.o HAL/src/alt_putchar.c
+Compiling alt_putcharbuf.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_putcharbuf.o HAL/src/alt_putcharbuf.c
+Compiling alt_putstr.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_putstr.o HAL/src/alt_putstr.c
+Compiling alt_read.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_read.o HAL/src/alt_read.c
+Compiling alt_release_fd.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_release_fd.o HAL/src/alt_release_fd.c
+Compiling alt_remap_cached.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_remap_cached.o HAL/src/alt_remap_cached.c
+Compiling alt_remap_uncached.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_remap_uncached.o HAL/src/alt_remap_uncached.c
+Compiling alt_rename.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_rename.o HAL/src/alt_rename.c
+Compiling alt_sbrk.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_sbrk.o HAL/src/alt_sbrk.c
+Compiling alt_settod.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_settod.o HAL/src/alt_settod.c
+Compiling alt_software_exception.S...
+nios2-elf-gcc -MP -MMD -c   -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_software_exception.o HAL/src/alt_software_exception.S
+Compiling alt_stat.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_stat.o HAL/src/alt_stat.c
+Compiling alt_tick.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_tick.o HAL/src/alt_tick.c
+Compiling alt_times.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_times.o HAL/src/alt_times.c
+Compiling alt_uncached_free.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_uncached_free.o HAL/src/alt_uncached_free.c
+Compiling alt_uncached_malloc.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_uncached_malloc.o HAL/src/alt_uncached_malloc.c
+Compiling alt_unlink.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_unlink.o HAL/src/alt_unlink.c
+Compiling alt_usleep.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_usleep.o HAL/src/alt_usleep.c
+Compiling alt_wait.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_wait.o HAL/src/alt_wait.c
+Compiling alt_write.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_write.o HAL/src/alt_write.c
+Compiling altera_nios2_gen2_irq.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/altera_nios2_gen2_irq.o HAL/src/altera_nios2_gen2_irq.c
+Compiling crt0.S...
+nios2-elf-gcc -MP -MMD -c   -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/crt0.o HAL/src/crt0.S
+Compiling alt_sys_init.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/alt_sys_init.o alt_sys_init.c
+alt_sys_init.c:72:1: warning: initialization from incompatible pointer type
+ ALTERA_AVALON_MAILBOX_SIMPLE_INSTANCE ( MAILBOX_SIMPLE_0_1, mailbox_simple_0_1);
+ ^
+alt_sys_init.c:72:1: warning: (near initialization for 'mailbox_simple_0_1.dev.open')
+alt_sys_init.c:72:1: warning: initialization from incompatible pointer type
+alt_sys_init.c:72:1: warning: (near initialization for 'mailbox_simple_0_1.dev.close')
+alt_sys_init.c:72:1: warning: braces around scalar initializer
+alt_sys_init.c:72:1: warning: (near initialization for 'mailbox_simple_0_1.base')
+alt_sys_init.c:73:1: warning: initialization from incompatible pointer type
+ ALTERA_AVALON_MAILBOX_SIMPLE_INSTANCE ( MAILBOX_SIMPLE_1_0, mailbox_simple_1_0);
+ ^
+alt_sys_init.c:73:1: warning: (near initialization for 'mailbox_simple_1_0.dev.open')
+alt_sys_init.c:73:1: warning: initialization from incompatible pointer type
+alt_sys_init.c:73:1: warning: (near initialization for 'mailbox_simple_1_0.dev.close')
+alt_sys_init.c:73:1: warning: braces around scalar initializer
+alt_sys_init.c:73:1: warning: (near initialization for 'mailbox_simple_1_0.base')
+Compiling altera_avalon_jtag_uart_fd.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/drivers/src/altera_avalon_jtag_uart_fd.o drivers/src/altera_avalon_jtag_uart_fd.c
+Compiling altera_avalon_jtag_uart_init.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/drivers/src/altera_avalon_jtag_uart_init.o drivers/src/altera_avalon_jtag_uart_init.c
+Compiling altera_avalon_jtag_uart_ioctl.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/drivers/src/altera_avalon_jtag_uart_ioctl.o drivers/src/altera_avalon_jtag_uart_ioctl.c
+Compiling altera_avalon_jtag_uart_read.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/drivers/src/altera_avalon_jtag_uart_read.o drivers/src/altera_avalon_jtag_uart_read.c
+Compiling altera_avalon_jtag_uart_write.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/drivers/src/altera_avalon_jtag_uart_write.o drivers/src/altera_avalon_jtag_uart_write.c
+Compiling altera_avalon_mailbox_simple.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/drivers/src/altera_avalon_mailbox_simple.o drivers/src/altera_avalon_mailbox_simple.c
+Compiling altera_msgdma.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall  -mhw-div -mhw-mul -mno-hw-mulx   -o obj/drivers/src/altera_msgdma.o drivers/src/altera_msgdma.c
+Creating libhal_bsp.a...
+rm -f -f libhal_bsp.a
+nios2-elf-ar -src libhal_bsp.a obj/HAL/src/alt_alarm_start.o obj/HAL/src/alt_busy_sleep.o obj/HAL/src/alt_close.o obj/HAL/src/alt_dcache_flush.o obj/HAL/src/alt_dcache_flush_all.o obj/HAL/src/alt_dcache_flush_no_writeback.o obj/HAL/src/alt_dev.o obj/HAL/src/alt_dev_llist_insert.o obj/HAL/src/alt_dma_rxchan_open.o obj/HAL/src/alt_dma_txchan_open.o obj/HAL/src/alt_do_ctors.o obj/HAL/src/alt_do_dtors.o obj/HAL/src/alt_ecc_fatal_entry.o obj/HAL/src/alt_ecc_fatal_exception.o obj/HAL/src/alt_env_lock.o obj/HAL/src/alt_environ.o obj/HAL/src/alt_errno.o obj/HAL/src/alt_exception_entry.o obj/HAL/src/alt_exception_muldiv.o obj/HAL/src/alt_exception_trap.o obj/HAL/src/alt_execve.o obj/HAL/src/alt_exit.o obj/HAL/src/alt_fcntl.o obj/HAL/src/alt_fd_lock.o obj/HAL/src/alt_fd_unlock.o obj/HAL/src/alt_find_dev.o obj/HAL/src/alt_find_file.o obj/HAL/src/alt_flash_dev.o obj/HAL/src/alt_fork.o obj/HAL/src/alt_fs_reg.o obj/HAL/src/alt_fstat.o obj/HAL/src/alt_get_fd.o obj/HAL/src/alt_getchar.o obj/HAL/src/alt_getpid.o obj/HAL/src/alt_gettod.o obj/HAL/src/alt_gmon.o obj/HAL/src/alt_icache_flush.o obj/HAL/src/alt_icache_flush_all.o obj/HAL/src/alt_iic.o obj/HAL/src/alt_iic_isr_register.o obj/HAL/src/alt_instruction_exception_entry.o obj/HAL/src/alt_instruction_exception_register.o obj/HAL/src/alt_io_redirect.o obj/HAL/src/alt_ioctl.o obj/HAL/src/alt_irq_entry.o obj/HAL/src/alt_irq_handler.o obj/HAL/src/alt_irq_register.o obj/HAL/src/alt_irq_vars.o obj/HAL/src/alt_isatty.o obj/HAL/src/alt_kill.o obj/HAL/src/alt_link.o obj/HAL/src/alt_load.o obj/HAL/src/alt_log_macro.o obj/HAL/src/alt_log_printf.o obj/HAL/src/alt_lseek.o obj/HAL/src/alt_main.o obj/HAL/src/alt_malloc_lock.o obj/HAL/src/alt_mcount.o obj/HAL/src/alt_open.o obj/HAL/src/alt_printf.o obj/HAL/src/alt_putchar.o obj/HAL/src/alt_putcharbuf.o obj/HAL/src/alt_putstr.o obj/HAL/src/alt_read.o obj/HAL/src/alt_release_fd.o obj/HAL/src/alt_remap_cached.o obj/HAL/src/alt_remap_uncached.o obj/HAL/src/alt_rename.o obj/HAL/src/alt_sbrk.o obj/HAL/src/alt_settod.o obj/HAL/src/alt_software_exception.o obj/HAL/src/alt_stat.o obj/HAL/src/alt_tick.o obj/HAL/src/alt_times.o obj/HAL/src/alt_uncached_free.o obj/HAL/src/alt_uncached_malloc.o obj/HAL/src/alt_unlink.o obj/HAL/src/alt_usleep.o obj/HAL/src/alt_wait.o obj/HAL/src/alt_write.o obj/HAL/src/altera_nios2_gen2_irq.o obj/HAL/src/crt0.o obj/alt_sys_init.o obj/drivers/src/altera_avalon_jtag_uart_fd.o obj/drivers/src/altera_avalon_jtag_uart_init.o obj/drivers/src/altera_avalon_jtag_uart_ioctl.o obj/drivers/src/altera_avalon_jtag_uart_read.o obj/drivers/src/altera_avalon_jtag_uart_write.o obj/drivers/src/altera_avalon_mailbox_simple.o obj/drivers/src/altera_msgdma.o
+[BSP build complete]
+Info: Compiling common/tables.c to obj/default/common/tables.o
+nios2-elf-gcc -xc -MP -MMD -c -I../lab3_cpu1_bsp//HAL/inc -I../lab3_cpu1_bsp/ -I../lab3_cpu1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall -std=c99  -mhw-div -mhw-mul -mno-hw-mulx  -o obj/default/common/tables.o common/tables.c
+Info: Compiling common/util.c to obj/default/common/util.o
+nios2-elf-gcc -xc -MP -MMD -c -I../lab3_cpu1_bsp//HAL/inc -I../lab3_cpu1_bsp/ -I../lab3_cpu1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall -std=c99  -mhw-div -mhw-mul -mno-hw-mulx  -o obj/default/common/util.o common/util.c
+Info: Compiling decoder/idct.c to obj/default/decoder/idct.o
+nios2-elf-gcc -xc -MP -MMD -c -I../lab3_cpu1_bsp//HAL/inc -I../lab3_cpu1_bsp/ -I../lab3_cpu1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall -std=c99  -mhw-div -mhw-mul -mno-hw-mulx  -o obj/default/decoder/idct.o decoder/idct.c
+Info: Compiling decoder/lossless_decode.c to obj/default/decoder/lossless_decode.o
+nios2-elf-gcc -xc -MP -MMD -c -I../lab3_cpu1_bsp//HAL/inc -I../lab3_cpu1_bsp/ -I../lab3_cpu1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall -std=c99  -mhw-div -mhw-mul -mno-hw-mulx  -o obj/default/decoder/lossless_decode.o decoder/lossless_decode.c
+Info: Compiling decoder/mjpeg423_decoder.c to obj/default/decoder/mjpeg423_decoder.o
+nios2-elf-gcc -xc -MP -MMD -c -I../lab3_cpu1_bsp//HAL/inc -I../lab3_cpu1_bsp/ -I../lab3_cpu1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall -std=c99  -mhw-div -mhw-mul -mno-hw-mulx  -o obj/default/decoder/mjpeg423_decoder.o decoder/mjpeg423_decoder.c
+decoder/mjpeg423_decoder.c: In function 'mjpeg423_decode':
+decoder/mjpeg423_decoder.c:74:53: warning: passing argument 2 of 'altera_avalon_mailbox_retrieve_poll' from incompatible pointer type
+   altera_avalon_mailbox_retrieve_poll(receive_cpu0, message, 0);
+                                                     ^
+In file included from decoder/mjpeg423_decoder.c:12:0:
+../lab3_cpu1_bsp//drivers/inc/altera_avalon_mailbox_simple.h:78:5: note: expected 'alt_u32 *' but argument is of type 'uint *'
+ int altera_avalon_mailbox_retrieve_poll (altera_avalon_mailbox_dev* dev,alt_u32* msg_ptr, alt_u32 timeout);
+     ^
+decoder/mjpeg423_decoder.c:92:5: warning: implicit declaration of function 'memalign' [-Wimplicit-function-declaration]
+     if((CbDCAC = (dct_block_t*)memalign(128, block_size * 64 * sizeof(DCTELEM))) == NULL)
+     ^
+decoder/mjpeg423_decoder.c:111:57: warning: passing argument 2 of 'altera_avalon_mailbox_retrieve_poll' from incompatible pointer type
+       altera_avalon_mailbox_retrieve_poll(receive_cpu0, message, 0);
+                                                         ^
+In file included from decoder/mjpeg423_decoder.c:12:0:
+../lab3_cpu1_bsp//drivers/inc/altera_avalon_mailbox_simple.h:78:5: note: expected 'alt_u32 *' but argument is of type 'uint *'
+ int altera_avalon_mailbox_retrieve_poll (altera_avalon_mailbox_dev* dev,alt_u32* msg_ptr, alt_u32 timeout);
+     ^
+decoder/mjpeg423_decoder.c:150:1: warning: label 'exit_decode' defined but not used [-Wunused-label]
+ exit_decode:
+ ^
+decoder/mjpeg423_decoder.c:47:6: warning: unused variable 'status' [-Wunused-variable]
+  int status;
+      ^
+Info: Compiling decoder/ycbcr_to_rgb.c to obj/default/decoder/ycbcr_to_rgb.o
+nios2-elf-gcc -xc -MP -MMD -c -I../lab3_cpu1_bsp//HAL/inc -I../lab3_cpu1_bsp/ -I../lab3_cpu1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall -std=c99  -mhw-div -mhw-mul -mno-hw-mulx  -o obj/default/decoder/ycbcr_to_rgb.o decoder/ycbcr_to_rgb.c
+decoder/ycbcr_to_rgb.c: In function 'ycbcr_to_rgb':
+decoder/ycbcr_to_rgb.c:61:16: warning: assignment from incompatible pointer type
+          pixel = &rgbblock[index];
+                ^
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../lab3_cpu1_bsp//HAL/inc -I../lab3_cpu1_bsp/ -I../lab3_cpu1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall -std=c99  -mhw-div -mhw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+Info: Linking lab3_cpu1.elf
+nios2-elf-g++  -T'../lab3_cpu1_bsp//linker.x' -msys-crt0='../lab3_cpu1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../lab3_cpu1_bsp/   -Wl,-Map=lab3_cpu1.map   -O3 -g -Wall -std=c99  -mhw-div -mhw-mul -mno-hw-mulx  -o lab3_cpu1.elf obj/default/common/tables.o obj/default/common/util.o obj/default/decoder/idct.o obj/default/decoder/lossless_decode.o obj/default/decoder/mjpeg423_decoder.o obj/default/decoder/ycbcr_to_rgb.o obj/default/main.o -lm -msys-lib=m
+nios2-elf-insert lab3_cpu1.elf --thread_model hal --cpu_name cpu_1 --qsys true --simulation_enabled false --stderr_dev jtag_uart_1 --stdin_dev jtag_uart_1 --stdout_dev jtag_uart_1 --sopc_system_name ECE423_QSYS --quartus_project_dir "C:/Users/y983wang/ECE423/ece423_prefab" --jdi C:/Users/y983wang/ECE423/ece423_prefab/software/lab3_cpu1_bsp/../../ECE423_C5G.jdi --sopcinfo C:/Users/y983wang/ECE423/ece423_prefab/software/lab3_cpu1_bsp/../../ECE423_QSYS.sopcinfo
+Info: (lab3_cpu1.elf) 78 KBytes program size (code + initialized data).
+Info:                 262134 KBytes free for stack + heap.
+Info: Creating lab3_cpu1.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source lab3_cpu1.elf >lab3_cpu1.objdump
+[lab3_cpu1 build complete]
+22:37:47 **** Build of configuration Nios II for project lab3_cpu1_bsp ****
+make all 
+[BSP build complete]
+22:38:06 **** Build of configuration Nios II for project lab3_cpu0 ****
+make all 
+Info: Building ../lab3_cpu0_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab3_cpu0_bsp/
+[BSP build complete]
+[lab3_cpu0 build complete]
+22:38:08 **** Incremental Build of configuration Nios II for project lab3_cpu0 ****
+make all 
+Info: Building ../lab3_cpu0_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab3_cpu0_bsp/
+[BSP build complete]
+[lab3_cpu0 build complete]
+22:56:39 **** Build of configuration Nios II for project lab3_cpu0 ****
+make all 
+Info: Building ../lab3_cpu0_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab3_cpu0_bsp/
+[BSP build complete]
+Info: Compiling decoder/mjpeg423_decoder.c to obj/default/decoder/mjpeg423_decoder.o
+nios2-elf-gcc -xc -MP -MMD -c -I../lab3_cpu0_bsp//HAL/inc -I../lab3_cpu0_bsp/ -I../lab3_cpu0_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall -std=c99  -mhw-div -mhw-mul -mno-hw-mulx  -o obj/default/decoder/mjpeg423_decoder.o decoder/mjpeg423_decoder.c
+In file included from decoder/mjpeg423_decoder.h:17:0,
+                 from decoder/mjpeg423_decoder.c:16:
+decoder/../ece423_sd/ece423_sd.h:37:0: warning: "TRUE" redefined
+ #define TRUE    1
+ ^
+In file included from decoder/mjpeg423_decoder.c:15:0:
+decoder/../common/mjpeg423_types.h:17:0: note: this is the location of the previous definition
+ #define TRUE !FALSE
+ ^
+In file included from decoder/mjpeg423_decoder.h:17:0,
+                 from decoder/mjpeg423_decoder.c:16:
+decoder/../ece423_sd/ece423_sd.h:38:0: warning: "FALSE" redefined
+ #define FALSE   0
+ ^
+In file included from decoder/mjpeg423_decoder.c:15:0:
+decoder/../common/mjpeg423_types.h:16:0: note: this is the location of the previous definition
+ #define FALSE (0)
+ ^
+decoder/mjpeg423_decoder.c:20:0: warning: "DEBUG" redefined
+ #define DEBUG 0
+ ^
+In file included from decoder/../ece423_sd/ece423_sd.h:60:0,
+                 from decoder/mjpeg423_decoder.h:17,
+                 from decoder/mjpeg423_decoder.c:16:
+decoder/../ece423_sd/debug.h:25:0: note: this is the location of the previous definition
+     #define DEBUG(x)               {myprintf x;}  // standard in/out, specifed in project (it could be uart, jtag, or lcd)
+ ^
+decoder/mjpeg423_decoder.c: In function 'mjpeg423_decode':
+decoder/mjpeg423_decoder.c:182:13: warning: assignment makes integer from pointer without a cast
+  message[1] = msg;
+             ^
+decoder/mjpeg423_decoder.c:183:2: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' [-Wformat=]
+  printf("Sending blocksize. Size: %d, id: %d", message[0], msg->block_size);
+  ^
+decoder/mjpeg423_decoder.c:183:2: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' [-Wformat=]
+decoder/mjpeg423_decoder.c:189:55: warning: passing argument 2 of 'altera_avalon_mailbox_retrieve_poll' from incompatible pointer type
+     altera_avalon_mailbox_retrieve_poll(receive_cpu1, message, 0);
+                                                       ^
+In file included from decoder/mjpeg423_decoder.c:12:0:
+../lab3_cpu0_bsp//drivers/inc/altera_avalon_mailbox_simple.h:78:5: note: expected 'alt_u32 *' but argument is of type 'uint *'
+ int altera_avalon_mailbox_retrieve_poll (altera_avalon_mailbox_dev* dev,alt_u32* msg_ptr, alt_u32 timeout);
+     ^
+decoder/mjpeg423_decoder.c:198:6: error: conversion to non-scalar type requested
+      printf("Receive blocksize reply Size:%d, index: %d", ((message_t)message[1])->block_size, message[0]);
+      ^
+decoder/mjpeg423_decoder.c:210:5: warning: implicit declaration of function 'memalign' [-Wimplicit-function-declaration]
+     if((YDCAC = (dct_block_t*)memalign(128, hYb_size * wYb_size * 64 * sizeof(DCTELEM))) == NULL)
+     ^
+decoder/mjpeg423_decoder.c:352:14: warning: assignment makes integer from pointer without a cast
+   message[1] = msg;
+              ^
+decoder/mjpeg423_decoder.c:353:3: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint8_t *' [-Wformat=]
+   printf("Sending frame.  number: %d, Cb: %d", frame_index, msg->Cbbitstream);
+   ^
+decoder/mjpeg423_decoder.c:353:3: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint8_t *' [-Wformat=]
+decoder/mjpeg423_decoder.c:379:54: warning: passing argument 2 of 'altera_avalon_mailbox_retrieve_poll' from incompatible pointer type
+    altera_avalon_mailbox_retrieve_poll(receive_cpu1, message, 0);
+                                                      ^
+In file included from decoder/mjpeg423_decoder.c:12:0:
+../lab3_cpu0_bsp//drivers/inc/altera_avalon_mailbox_simple.h:78:5: note: expected 'alt_u32 *' but argument is of type 'uint *'
+ int altera_avalon_mailbox_retrieve_poll (altera_avalon_mailbox_dev* dev,alt_u32* msg_ptr, alt_u32 timeout);
+     ^
+decoder/mjpeg423_decoder.c:102:6: warning: variable 'frame_index_cpu1' set but not used [-Wunused-but-set-variable]
+  int frame_index_cpu1;
+      ^
+make: *** [obj/default/decoder/mjpeg423_decoder.o] Error 1
+22:56:41 **** Incremental Build of configuration Nios II for project lab3_cpu0 ****
+make all 
+Info: Building ../lab3_cpu0_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab3_cpu0_bsp/
+[BSP build complete]
+Info: Compiling decoder/mjpeg423_decoder.c to obj/default/decoder/mjpeg423_decoder.o
+nios2-elf-gcc -xc -MP -MMD -c -I../lab3_cpu0_bsp//HAL/inc -I../lab3_cpu0_bsp/ -I../lab3_cpu0_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall -std=c99  -mhw-div -mhw-mul -mno-hw-mulx  -o obj/default/decoder/mjpeg423_decoder.o decoder/mjpeg423_decoder.c
+In file included from decoder/mjpeg423_decoder.h:17:0,
+                 from decoder/mjpeg423_decoder.c:16:
+decoder/../ece423_sd/ece423_sd.h:37:0: warning: "TRUE" redefined
+ #define TRUE    1
+ ^
+In file included from decoder/mjpeg423_decoder.c:15:0:
+decoder/../common/mjpeg423_types.h:17:0: note: this is the location of the previous definition
+ #define TRUE !FALSE
+ ^
+In file included from decoder/mjpeg423_decoder.h:17:0,
+                 from decoder/mjpeg423_decoder.c:16:
+decoder/../ece423_sd/ece423_sd.h:38:0: warning: "FALSE" redefined
+ #define FALSE   0
+ ^
+In file included from decoder/mjpeg423_decoder.c:15:0:
+decoder/../common/mjpeg423_types.h:16:0: note: this is the location of the previous definition
+ #define FALSE (0)
+ ^
+decoder/mjpeg423_decoder.c:20:0: warning: "DEBUG" redefined
+ #define DEBUG 0
+ ^
+In file included from decoder/../ece423_sd/ece423_sd.h:60:0,
+                 from decoder/mjpeg423_decoder.h:17,
+                 from decoder/mjpeg423_decoder.c:16:
+decoder/../ece423_sd/debug.h:25:0: note: this is the location of the previous definition
+     #define DEBUG(x)               {myprintf x;}  // standard in/out, specifed in project (it could be uart, jtag, or lcd)
+ ^
+decoder/mjpeg423_decoder.c: In function 'mjpeg423_decode':
+decoder/mjpeg423_decoder.c:182:13: warning: assignment makes integer from pointer without a cast
+  message[1] = msg;
+             ^
+decoder/mjpeg423_decoder.c:183:2: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' [-Wformat=]
+  printf("Sending blocksize. Size: %d, id: %d", message[0], msg->block_size);
+  ^
+decoder/mjpeg423_decoder.c:183:2: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' [-Wformat=]
+decoder/mjpeg423_decoder.c:189:55: warning: passing argument 2 of 'altera_avalon_mailbox_retrieve_poll' from incompatible pointer type
+     altera_avalon_mailbox_retrieve_poll(receive_cpu1, message, 0);
+                                                       ^
+In file included from decoder/mjpeg423_decoder.c:12:0:
+../lab3_cpu0_bsp//drivers/inc/altera_avalon_mailbox_simple.h:78:5: note: expected 'alt_u32 *' but argument is of type 'uint *'
+ int altera_avalon_mailbox_retrieve_poll (altera_avalon_mailbox_dev* dev,alt_u32* msg_ptr, alt_u32 timeout);
+     ^
+decoder/mjpeg423_decoder.c:198:6: error: conversion to non-scalar type requested
+      printf("Receive blocksize reply Size:%d, index: %d", ((message_t)message[1])->block_size, message[0]);
+      ^
+decoder/mjpeg423_decoder.c:210:5: warning: implicit declaration of function 'memalign' [-Wimplicit-function-declaration]
+     if((YDCAC = (dct_block_t*)memalign(128, hYb_size * wYb_size * 64 * sizeof(DCTELEM))) == NULL)
+     ^
+decoder/mjpeg423_decoder.c:352:14: warning: assignment makes integer from pointer without a cast
+   message[1] = msg;
+              ^
+decoder/mjpeg423_decoder.c:353:3: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint8_t *' [-Wformat=]
+   printf("Sending frame.  number: %d, Cb: %d", frame_index, msg->Cbbitstream);
+   ^
+decoder/mjpeg423_decoder.c:353:3: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint8_t *' [-Wformat=]
+decoder/mjpeg423_decoder.c:379:54: warning: passing argument 2 of 'altera_avalon_mailbox_retrieve_poll' from incompatible pointer type
+    altera_avalon_mailbox_retrieve_poll(receive_cpu1, message, 0);
+                                                      ^
+In file included from decoder/mjpeg423_decoder.c:12:0:
+../lab3_cpu0_bsp//drivers/inc/altera_avalon_mailbox_simple.h:78:5: note: expected 'alt_u32 *' but argument is of type 'uint *'
+ int altera_avalon_mailbox_retrieve_poll (altera_avalon_mailbox_dev* dev,alt_u32* msg_ptr, alt_u32 timeout);
+     ^
+decoder/mjpeg423_decoder.c:102:6: warning: variable 'frame_index_cpu1' set but not used [-Wunused-but-set-variable]
+  int frame_index_cpu1;
+      ^
+make: *** [obj/default/decoder/mjpeg423_decoder.o] Error 1
+22:57:45 **** Build of configuration Nios II for project lab3_cpu0 ****
+make all 
+Info: Building ../lab3_cpu0_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab3_cpu0_bsp/
+[BSP build complete]
+Info: Compiling decoder/mjpeg423_decoder.c to obj/default/decoder/mjpeg423_decoder.o
+nios2-elf-gcc -xc -MP -MMD -c -I../lab3_cpu0_bsp//HAL/inc -I../lab3_cpu0_bsp/ -I../lab3_cpu0_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall -std=c99  -mhw-div -mhw-mul -mno-hw-mulx  -o obj/default/decoder/mjpeg423_decoder.o decoder/mjpeg423_decoder.c
+In file included from decoder/mjpeg423_decoder.h:17:0,
+                 from decoder/mjpeg423_decoder.c:16:
+decoder/../ece423_sd/ece423_sd.h:37:0: warning: "TRUE" redefined
+ #define TRUE    1
+ ^
+In file included from decoder/mjpeg423_decoder.c:15:0:
+decoder/../common/mjpeg423_types.h:17:0: note: this is the location of the previous definition
+ #define TRUE !FALSE
+ ^
+In file included from decoder/mjpeg423_decoder.h:17:0,
+                 from decoder/mjpeg423_decoder.c:16:
+decoder/../ece423_sd/ece423_sd.h:38:0: warning: "FALSE" redefined
+ #define FALSE   0
+ ^
+In file included from decoder/mjpeg423_decoder.c:15:0:
+decoder/../common/mjpeg423_types.h:16:0: note: this is the location of the previous definition
+ #define FALSE (0)
+ ^
+decoder/mjpeg423_decoder.c:20:0: warning: "DEBUG" redefined
+ #define DEBUG 0
+ ^
+In file included from decoder/../ece423_sd/ece423_sd.h:60:0,
+                 from decoder/mjpeg423_decoder.h:17,
+                 from decoder/mjpeg423_decoder.c:16:
+decoder/../ece423_sd/debug.h:25:0: note: this is the location of the previous definition
+     #define DEBUG(x)               {myprintf x;}  // standard in/out, specifed in project (it could be uart, jtag, or lcd)
+ ^
+decoder/mjpeg423_decoder.c: In function 'mjpeg423_decode':
+decoder/mjpeg423_decoder.c:182:13: warning: assignment makes integer from pointer without a cast
+  message[1] = msg;
+             ^
+decoder/mjpeg423_decoder.c:183:2: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' [-Wformat=]
+  printf("Sending blocksize. Size: %d, id: %d", message[0], msg->block_size);
+  ^
+decoder/mjpeg423_decoder.c:183:2: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' [-Wformat=]
+decoder/mjpeg423_decoder.c:189:55: warning: passing argument 2 of 'altera_avalon_mailbox_retrieve_poll' from incompatible pointer type
+     altera_avalon_mailbox_retrieve_poll(receive_cpu1, message, 0);
+                                                       ^
+In file included from decoder/mjpeg423_decoder.c:12:0:
+../lab3_cpu0_bsp//drivers/inc/altera_avalon_mailbox_simple.h:78:5: note: expected 'alt_u32 *' but argument is of type 'uint *'
+ int altera_avalon_mailbox_retrieve_poll (altera_avalon_mailbox_dev* dev,alt_u32* msg_ptr, alt_u32 timeout);
+     ^
+decoder/mjpeg423_decoder.c:198:6: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t' [-Wformat=]
+      printf("Receive blocksize reply Size:%d, index: %d", msg->block_size,  message[0]);
+      ^
+decoder/mjpeg423_decoder.c:198:6: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t' [-Wformat=]
+decoder/mjpeg423_decoder.c:210:5: warning: implicit declaration of function 'memalign' [-Wimplicit-function-declaration]
+     if((YDCAC = (dct_block_t*)memalign(128, hYb_size * wYb_size * 64 * sizeof(DCTELEM))) == NULL)
+     ^
+decoder/mjpeg423_decoder.c:352:14: warning: assignment makes integer from pointer without a cast
+   message[1] = msg;
+              ^
+decoder/mjpeg423_decoder.c:353:3: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint8_t *' [-Wformat=]
+   printf("Sending frame.  number: %d, Cb: %d", frame_index, msg->Cbbitstream);
+   ^
+decoder/mjpeg423_decoder.c:353:3: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint8_t *' [-Wformat=]
+decoder/mjpeg423_decoder.c:379:54: warning: passing argument 2 of 'altera_avalon_mailbox_retrieve_poll' from incompatible pointer type
+    altera_avalon_mailbox_retrieve_poll(receive_cpu1, message, 0);
+                                                      ^
+In file included from decoder/mjpeg423_decoder.c:12:0:
+../lab3_cpu0_bsp//drivers/inc/altera_avalon_mailbox_simple.h:78:5: note: expected 'alt_u32 *' but argument is of type 'uint *'
+ int altera_avalon_mailbox_retrieve_poll (altera_avalon_mailbox_dev* dev,alt_u32* msg_ptr, alt_u32 timeout);
+     ^
+decoder/mjpeg423_decoder.c:102:6: warning: variable 'frame_index_cpu1' set but not used [-Wunused-but-set-variable]
+  int frame_index_cpu1;
+      ^
+Info: Linking lab3_cpu0.elf
+nios2-elf-g++  -T'../lab3_cpu0_bsp//linker.x' -msys-crt0='../lab3_cpu0_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../lab3_cpu0_bsp/   -Wl,-Map=lab3_cpu0.map   -O3 -g -Wall -std=c99  -mhw-div -mhw-mul -mno-hw-mulx  -o lab3_cpu0.elf obj/default/common/tables.o obj/default/common/util.o obj/default/decoder/idct.o obj/default/decoder/lossless_decode.o obj/default/decoder/mjpeg423_decoder.o obj/default/decoder/ycbcr_to_rgb.o obj/default/ece423_sd/FatFileSystem.o obj/default/ece423_sd/FatInternal.o obj/default/ece423_sd/debug.o obj/default/ece423_sd/mmc.o obj/default/ece423_sd/ocsdc.o obj/default/ece423_sd/sd_lib.o obj/default/ece423_vid_ctl/ece423_vid_ctl.o obj/default/ece423_vid_ctl/font.o obj/default/ece423_vid_ctl/heatshrink/heatshrink.o obj/default/ece423_vid_ctl/heatshrink/heatshrink_decoder.o obj/default/ece423_vid_ctl/i2c.o obj/default/ece423_vid_ctl/uw_logo.o obj/default/main.o -lm -msys-lib=m
+nios2-elf-insert lab3_cpu0.elf --thread_model hal --cpu_name cpu_0 --qsys true --simulation_enabled false --id 0 --sidp 0x21101000 --timestamp 1553656304 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name ECE423_QSYS --quartus_project_dir "C:/Users/y983wang/ECE423/ece423_prefab" --jdi C:/Users/y983wang/ECE423/ece423_prefab/software/lab3_cpu0_bsp/../../ECE423_C5G.jdi --sopcinfo C:/Users/y983wang/ECE423/ece423_prefab/software/lab3_cpu0_bsp/../../ECE423_QSYS.sopcinfo
+Info: (lab3_cpu0.elf) 146 KBytes program size (code + initialized data).
+Info:                 262118 KBytes free for stack + heap.
+Info: Creating lab3_cpu0.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source lab3_cpu0.elf >lab3_cpu0.objdump
+[lab3_cpu0 build complete]
+22:57:48 **** Incremental Build of configuration Nios II for project lab3_cpu0 ****
+make all 
+Info: Building ../lab3_cpu0_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab3_cpu0_bsp/
+[BSP build complete]
+[lab3_cpu0 build complete]
+23:01:59 **** Build of configuration Nios II for project lab3_cpu1 ****
+make all 
+Info: Building ../lab3_cpu1_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab3_cpu1_bsp/
+[BSP build complete]
+Info: Compiling decoder/mjpeg423_decoder.c to obj/default/decoder/mjpeg423_decoder.o
+nios2-elf-gcc -xc -MP -MMD -c -I../lab3_cpu1_bsp//HAL/inc -I../lab3_cpu1_bsp/ -I../lab3_cpu1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall -std=c99  -mhw-div -mhw-mul -mno-hw-mulx  -o obj/default/decoder/mjpeg423_decoder.o decoder/mjpeg423_decoder.c
+decoder/mjpeg423_decoder.c: In function 'mjpeg423_decode':
+decoder/mjpeg423_decoder.c:74:53: warning: passing argument 2 of 'altera_avalon_mailbox_retrieve_poll' from incompatible pointer type
+   altera_avalon_mailbox_retrieve_poll(receive_cpu0, message, 0);
+                                                     ^
+In file included from decoder/mjpeg423_decoder.c:12:0:
+../lab3_cpu1_bsp//drivers/inc/altera_avalon_mailbox_simple.h:78:5: note: expected 'alt_u32 *' but argument is of type 'uint *'
+ int altera_avalon_mailbox_retrieve_poll (altera_avalon_mailbox_dev* dev,alt_u32* msg_ptr, alt_u32 timeout);
+     ^
+decoder/mjpeg423_decoder.c:87:4: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' [-Wformat=]
+    printf("Received 1st message Size: %d, number: %d", message[0], msg->block_size);
+    ^
+decoder/mjpeg423_decoder.c:87:4: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' [-Wformat=]
+decoder/mjpeg423_decoder.c:95:5: warning: implicit declaration of function 'memalign' [-Wimplicit-function-declaration]
+     if((CbDCAC = (dct_block_t*)memalign(128, block_size * 64 * sizeof(DCTELEM))) == NULL)
+     ^
+decoder/mjpeg423_decoder.c:114:57: warning: passing argument 2 of 'altera_avalon_mailbox_retrieve_poll' from incompatible pointer type
+       altera_avalon_mailbox_retrieve_poll(receive_cpu0, message, 0);
+                                                         ^
+In file included from decoder/mjpeg423_decoder.c:12:0:
+../lab3_cpu1_bsp//drivers/inc/altera_avalon_mailbox_simple.h:78:5: note: expected 'alt_u32 *' but argument is of type 'uint *'
+ int altera_avalon_mailbox_retrieve_poll (altera_avalon_mailbox_dev* dev,alt_u32* msg_ptr, alt_u32 timeout);
+     ^
+decoder/mjpeg423_decoder.c:129:8: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint8_t *' [-Wformat=]
+        printf("received frame number %d, cb: %d", message[0], msg->Cbbitstream);
+        ^
+decoder/mjpeg423_decoder.c:129:8: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint8_t *' [-Wformat=]
+decoder/mjpeg423_decoder.c:154:1: warning: label 'exit_decode' defined but not used [-Wunused-label]
+ exit_decode:
+ ^
+decoder/mjpeg423_decoder.c:47:6: warning: unused variable 'status' [-Wunused-variable]
+  int status;
+      ^
+Info: Linking lab3_cpu1.elf
+nios2-elf-g++  -T'../lab3_cpu1_bsp//linker.x' -msys-crt0='../lab3_cpu1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../lab3_cpu1_bsp/   -Wl,-Map=lab3_cpu1.map   -O3 -g -Wall -std=c99  -mhw-div -mhw-mul -mno-hw-mulx  -o lab3_cpu1.elf obj/default/common/tables.o obj/default/common/util.o obj/default/decoder/idct.o obj/default/decoder/lossless_decode.o obj/default/decoder/mjpeg423_decoder.o obj/default/decoder/ycbcr_to_rgb.o obj/default/main.o -lm -msys-lib=m
+nios2-elf-insert lab3_cpu1.elf --thread_model hal --cpu_name cpu_1 --qsys true --simulation_enabled false --stderr_dev jtag_uart_1 --stdin_dev jtag_uart_1 --stdout_dev jtag_uart_1 --sopc_system_name ECE423_QSYS --quartus_project_dir "C:/Users/y983wang/ECE423/ece423_prefab" --jdi C:/Users/y983wang/ECE423/ece423_prefab/software/lab3_cpu1_bsp/../../ECE423_C5G.jdi --sopcinfo C:/Users/y983wang/ECE423/ece423_prefab/software/lab3_cpu1_bsp/../../ECE423_QSYS.sopcinfo
+Info: (lab3_cpu1.elf) 78 KBytes program size (code + initialized data).
+Info:                 262134 KBytes free for stack + heap.
+Info: Creating lab3_cpu1.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source lab3_cpu1.elf >lab3_cpu1.objdump
+[lab3_cpu1 build complete]
+23:02:01 **** Incremental Build of configuration Nios II for project lab3_cpu1 ****
+make all 
+Info: Building ../lab3_cpu1_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab3_cpu1_bsp/
+[BSP build complete]
+[lab3_cpu1 build complete]
+23:04:12 **** Build of configuration Nios II for project lab3_cpu1 ****
+make all 
+Info: Building ../lab3_cpu1_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab3_cpu1_bsp/
+[BSP build complete]
+Info: Compiling decoder/mjpeg423_decoder.c to obj/default/decoder/mjpeg423_decoder.o
+nios2-elf-gcc -xc -MP -MMD -c -I../lab3_cpu1_bsp//HAL/inc -I../lab3_cpu1_bsp/ -I../lab3_cpu1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall -std=c99  -mhw-div -mhw-mul -mno-hw-mulx  -o obj/default/decoder/mjpeg423_decoder.o decoder/mjpeg423_decoder.c
+decoder/mjpeg423_decoder.c: In function 'mjpeg423_decode':
+decoder/mjpeg423_decoder.c:74:53: warning: passing argument 2 of 'altera_avalon_mailbox_retrieve_poll' from incompatible pointer type
+   altera_avalon_mailbox_retrieve_poll(receive_cpu0, message, 0);
+                                                     ^
+In file included from decoder/mjpeg423_decoder.c:12:0:
+../lab3_cpu1_bsp//drivers/inc/altera_avalon_mailbox_simple.h:78:5: note: expected 'alt_u32 *' but argument is of type 'uint *'
+ int altera_avalon_mailbox_retrieve_poll (altera_avalon_mailbox_dev* dev,alt_u32* msg_ptr, alt_u32 timeout);
+     ^
+decoder/mjpeg423_decoder.c:87:4: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' [-Wformat=]
+    printf("Received 1st message Size: %d, number: %d \n", message[0], msg->block_size);
+    ^
+decoder/mjpeg423_decoder.c:87:4: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' [-Wformat=]
+decoder/mjpeg423_decoder.c:95:5: warning: implicit declaration of function 'memalign' [-Wimplicit-function-declaration]
+     if((CbDCAC = (dct_block_t*)memalign(128, block_size * 64 * sizeof(DCTELEM))) == NULL)
+     ^
+decoder/mjpeg423_decoder.c:114:57: warning: passing argument 2 of 'altera_avalon_mailbox_retrieve_poll' from incompatible pointer type
+       altera_avalon_mailbox_retrieve_poll(receive_cpu0, message, 0);
+                                                         ^
+In file included from decoder/mjpeg423_decoder.c:12:0:
+../lab3_cpu1_bsp//drivers/inc/altera_avalon_mailbox_simple.h:78:5: note: expected 'alt_u32 *' but argument is of type 'uint *'
+ int altera_avalon_mailbox_retrieve_poll (altera_avalon_mailbox_dev* dev,alt_u32* msg_ptr, alt_u32 timeout);
+     ^
+decoder/mjpeg423_decoder.c:129:8: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint8_t *' [-Wformat=]
+        printf("received frame number %d, cb: %d \n", message[0], msg->Cbbitstream);
+        ^
+decoder/mjpeg423_decoder.c:129:8: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint8_t *' [-Wformat=]
+decoder/mjpeg423_decoder.c:154:1: warning: label 'exit_decode' defined but not used [-Wunused-label]
+ exit_decode:
+ ^
+decoder/mjpeg423_decoder.c:47:6: warning: unused variable 'status' [-Wunused-variable]
+  int status;
+      ^
+Info: Linking lab3_cpu1.elf
+nios2-elf-g++  -T'../lab3_cpu1_bsp//linker.x' -msys-crt0='../lab3_cpu1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../lab3_cpu1_bsp/   -Wl,-Map=lab3_cpu1.map   -O3 -g -Wall -std=c99  -mhw-div -mhw-mul -mno-hw-mulx  -o lab3_cpu1.elf obj/default/common/tables.o obj/default/common/util.o obj/default/decoder/idct.o obj/default/decoder/lossless_decode.o obj/default/decoder/mjpeg423_decoder.o obj/default/decoder/ycbcr_to_rgb.o obj/default/main.o -lm -msys-lib=m
+nios2-elf-insert lab3_cpu1.elf --thread_model hal --cpu_name cpu_1 --qsys true --simulation_enabled false --stderr_dev jtag_uart_1 --stdin_dev jtag_uart_1 --stdout_dev jtag_uart_1 --sopc_system_name ECE423_QSYS --quartus_project_dir "C:/Users/y983wang/ECE423/ece423_prefab" --jdi C:/Users/y983wang/ECE423/ece423_prefab/software/lab3_cpu1_bsp/../../ECE423_C5G.jdi --sopcinfo C:/Users/y983wang/ECE423/ece423_prefab/software/lab3_cpu1_bsp/../../ECE423_QSYS.sopcinfo
+Info: (lab3_cpu1.elf) 78 KBytes program size (code + initialized data).
+Info:                 262134 KBytes free for stack + heap.
+Info: Creating lab3_cpu1.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source lab3_cpu1.elf >lab3_cpu1.objdump
+[lab3_cpu1 build complete]
+23:04:14 **** Incremental Build of configuration Nios II for project lab3_cpu1 ****
+make all 
+Info: Building ../lab3_cpu1_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab3_cpu1_bsp/
+[BSP build complete]
+[lab3_cpu1 build complete]
+23:04:26 **** Build of configuration Nios II for project lab3_cpu1 ****
+make all 
+Info: Building ../lab3_cpu1_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab3_cpu1_bsp/
+[BSP build complete]
+[lab3_cpu1 build complete]
+23:04:27 **** Incremental Build of configuration Nios II for project lab3_cpu1 ****
+make all 
+Info: Building ../lab3_cpu1_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab3_cpu1_bsp/
+[BSP build complete]
+[lab3_cpu1 build complete]
+23:04:47 **** Incremental Build of configuration Nios II for project lab3_cpu1 ****
+make all 
+Info: Building ../lab3_cpu1_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab3_cpu1_bsp/
+[BSP build complete]
+[lab3_cpu1 build complete]
+23:05:02 **** Incremental Build of configuration Nios II for project lab3_cpu1 ****
+make all 
+Info: Building ../lab3_cpu1_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab3_cpu1_bsp/
+[BSP build complete]
+[lab3_cpu1 build complete]
+23:06:36 **** Incremental Build of configuration Nios II for project lab3_cpu1 ****
+make all 
+Info: Building ../lab3_cpu1_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab3_cpu1_bsp/
+[BSP build complete]
+[lab3_cpu1 build complete]
+23:09:01 **** Build of configuration Nios II for project lab3_cpu0 ****
+make all 
+Info: Building ../lab3_cpu0_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab3_cpu0_bsp/
+[BSP build complete]
+Info: Compiling decoder/mjpeg423_decoder.c to obj/default/decoder/mjpeg423_decoder.o
+nios2-elf-gcc -xc -MP -MMD -c -I../lab3_cpu0_bsp//HAL/inc -I../lab3_cpu0_bsp/ -I../lab3_cpu0_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall -std=c99  -mhw-div -mhw-mul -mno-hw-mulx  -o obj/default/decoder/mjpeg423_decoder.o decoder/mjpeg423_decoder.c
+In file included from decoder/mjpeg423_decoder.h:17:0,
+                 from decoder/mjpeg423_decoder.c:16:
+decoder/../ece423_sd/ece423_sd.h:37:0: warning: "TRUE" redefined
+ #define TRUE    1
+ ^
+In file included from decoder/mjpeg423_decoder.c:15:0:
+decoder/../common/mjpeg423_types.h:17:0: note: this is the location of the previous definition
+ #define TRUE !FALSE
+ ^
+In file included from decoder/mjpeg423_decoder.h:17:0,
+                 from decoder/mjpeg423_decoder.c:16:
+decoder/../ece423_sd/ece423_sd.h:38:0: warning: "FALSE" redefined
+ #define FALSE   0
+ ^
+In file included from decoder/mjpeg423_decoder.c:15:0:
+decoder/../common/mjpeg423_types.h:16:0: note: this is the location of the previous definition
+ #define FALSE (0)
+ ^
+decoder/mjpeg423_decoder.c:20:0: warning: "DEBUG" redefined
+ #define DEBUG 0
+ ^
+In file included from decoder/../ece423_sd/ece423_sd.h:60:0,
+                 from decoder/mjpeg423_decoder.h:17,
+                 from decoder/mjpeg423_decoder.c:16:
+decoder/../ece423_sd/debug.h:25:0: note: this is the location of the previous definition
+     #define DEBUG(x)               {myprintf x;}  // standard in/out, specifed in project (it could be uart, jtag, or lcd)
+ ^
+decoder/mjpeg423_decoder.c: In function 'mjpeg423_decode':
+decoder/mjpeg423_decoder.c:182:13: warning: assignment makes integer from pointer without a cast
+  message[1] = msg;
+             ^
+decoder/mjpeg423_decoder.c:183:2: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' [-Wformat=]
+  printf("Sending blocksize.number %d, size %d  \n", message[0], msg->block_size);
+  ^
+decoder/mjpeg423_decoder.c:183:2: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' [-Wformat=]
+decoder/mjpeg423_decoder.c:189:55: warning: passing argument 2 of 'altera_avalon_mailbox_retrieve_poll' from incompatible pointer type
+     altera_avalon_mailbox_retrieve_poll(receive_cpu1, message, 0);
+                                                       ^
+In file included from decoder/mjpeg423_decoder.c:12:0:
+../lab3_cpu0_bsp//drivers/inc/altera_avalon_mailbox_simple.h:78:5: note: expected 'alt_u32 *' but argument is of type 'uint *'
+ int altera_avalon_mailbox_retrieve_poll (altera_avalon_mailbox_dev* dev,alt_u32* msg_ptr, alt_u32 timeout);
+     ^
+decoder/mjpeg423_decoder.c:198:6: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t' [-Wformat=]
+      printf("Receive blocksize reply Size:%d, index: %d \n", msg->block_size,  message[0]);
+      ^
+decoder/mjpeg423_decoder.c:198:6: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t' [-Wformat=]
+decoder/mjpeg423_decoder.c:210:5: warning: implicit declaration of function 'memalign' [-Wimplicit-function-declaration]
+     if((YDCAC = (dct_block_t*)memalign(128, hYb_size * wYb_size * 64 * sizeof(DCTELEM))) == NULL)
+     ^
+decoder/mjpeg423_decoder.c:352:14: warning: assignment makes integer from pointer without a cast
+   message[1] = msg;
+              ^
+decoder/mjpeg423_decoder.c:353:3: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint8_t *' [-Wformat=]
+   printf("Sending frame.  number: %d, Cb: %d \n", frame_index, msg->Cbbitstream);
+   ^
+decoder/mjpeg423_decoder.c:353:3: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint8_t *' [-Wformat=]
+decoder/mjpeg423_decoder.c:379:54: warning: passing argument 2 of 'altera_avalon_mailbox_retrieve_poll' from incompatible pointer type
+    altera_avalon_mailbox_retrieve_poll(receive_cpu1, message, 0);
+                                                      ^
+In file included from decoder/mjpeg423_decoder.c:12:0:
+../lab3_cpu0_bsp//drivers/inc/altera_avalon_mailbox_simple.h:78:5: note: expected 'alt_u32 *' but argument is of type 'uint *'
+ int altera_avalon_mailbox_retrieve_poll (altera_avalon_mailbox_dev* dev,alt_u32* msg_ptr, alt_u32 timeout);
+     ^
+decoder/mjpeg423_decoder.c:102:6: warning: variable 'frame_index_cpu1' set but not used [-Wunused-but-set-variable]
+  int frame_index_cpu1;
+      ^
+Info: Linking lab3_cpu0.elf
+nios2-elf-g++  -T'../lab3_cpu0_bsp//linker.x' -msys-crt0='../lab3_cpu0_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../lab3_cpu0_bsp/   -Wl,-Map=lab3_cpu0.map   -O3 -g -Wall -std=c99  -mhw-div -mhw-mul -mno-hw-mulx  -o lab3_cpu0.elf obj/default/common/tables.o obj/default/common/util.o obj/default/decoder/idct.o obj/default/decoder/lossless_decode.o obj/default/decoder/mjpeg423_decoder.o obj/default/decoder/ycbcr_to_rgb.o obj/default/ece423_sd/FatFileSystem.o obj/default/ece423_sd/FatInternal.o obj/default/ece423_sd/debug.o obj/default/ece423_sd/mmc.o obj/default/ece423_sd/ocsdc.o obj/default/ece423_sd/sd_lib.o obj/default/ece423_vid_ctl/ece423_vid_ctl.o obj/default/ece423_vid_ctl/font.o obj/default/ece423_vid_ctl/heatshrink/heatshrink.o obj/default/ece423_vid_ctl/heatshrink/heatshrink_decoder.o obj/default/ece423_vid_ctl/i2c.o obj/default/ece423_vid_ctl/uw_logo.o obj/default/main.o -lm -msys-lib=m
+nios2-elf-insert lab3_cpu0.elf --thread_model hal --cpu_name cpu_0 --qsys true --simulation_enabled false --id 0 --sidp 0x21101000 --timestamp 1553656304 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name ECE423_QSYS --quartus_project_dir "C:/Users/y983wang/ECE423/ece423_prefab" --jdi C:/Users/y983wang/ECE423/ece423_prefab/software/lab3_cpu0_bsp/../../ECE423_C5G.jdi --sopcinfo C:/Users/y983wang/ECE423/ece423_prefab/software/lab3_cpu0_bsp/../../ECE423_QSYS.sopcinfo
+Info: (lab3_cpu0.elf) 146 KBytes program size (code + initialized data).
+Info:                 262118 KBytes free for stack + heap.
+Info: Creating lab3_cpu0.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source lab3_cpu0.elf >lab3_cpu0.objdump
+[lab3_cpu0 build complete]
+23:09:04 **** Incremental Build of configuration Nios II for project lab3_cpu0 ****
+make all 
+Info: Building ../lab3_cpu0_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab3_cpu0_bsp/
+[BSP build complete]
+[lab3_cpu0 build complete]
+23:11:00 **** Build of configuration Nios II for project lab3_cpu0 ****
+make all 
+Info: Building ../lab3_cpu0_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab3_cpu0_bsp/
+[BSP build complete]
+[lab3_cpu0 build complete]
+23:11:01 **** Incremental Build of configuration Nios II for project lab3_cpu0 ****
+make all 
+Info: Building ../lab3_cpu0_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab3_cpu0_bsp/
+[BSP build complete]
+[lab3_cpu0 build complete]
+23:11:11 **** Incremental Build of configuration Nios II for project lab3_cpu0 ****
+make all 
+Info: Building ../lab3_cpu0_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab3_cpu0_bsp/
+[BSP build complete]
+[lab3_cpu0 build complete]
+23:12:46 **** Build of configuration Nios II for project lab3_cpu1 ****
+make all 
+Info: Building ../lab3_cpu1_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab3_cpu1_bsp/
+[BSP build complete]
+Info: Compiling decoder/mjpeg423_decoder.c to obj/default/decoder/mjpeg423_decoder.o
+nios2-elf-gcc -xc -MP -MMD -c -I../lab3_cpu1_bsp//HAL/inc -I../lab3_cpu1_bsp/ -I../lab3_cpu1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall -std=c99  -mhw-div -mhw-mul -mno-hw-mulx  -o obj/default/decoder/mjpeg423_decoder.o decoder/mjpeg423_decoder.c
+decoder/mjpeg423_decoder.c: In function 'mjpeg423_decode':
+decoder/mjpeg423_decoder.c:74:53: warning: passing argument 2 of 'altera_avalon_mailbox_retrieve_poll' from incompatible pointer type
+   altera_avalon_mailbox_retrieve_poll(receive_cpu0, message, 0);
+                                                     ^
+In file included from decoder/mjpeg423_decoder.c:12:0:
+../lab3_cpu1_bsp//drivers/inc/altera_avalon_mailbox_simple.h:78:5: note: expected 'alt_u32 *' but argument is of type 'uint *'
+ int altera_avalon_mailbox_retrieve_poll (altera_avalon_mailbox_dev* dev,alt_u32* msg_ptr, alt_u32 timeout);
+     ^
+decoder/mjpeg423_decoder.c:87:4: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' [-Wformat=]
+    printf("Received 1st message  number: %d  size %d \n", message[0], msg->block_size);
+    ^
+decoder/mjpeg423_decoder.c:87:4: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' [-Wformat=]
+decoder/mjpeg423_decoder.c:95:5: warning: implicit declaration of function 'memalign' [-Wimplicit-function-declaration]
+     if((CbDCAC = (dct_block_t*)memalign(128, block_size * 64 * sizeof(DCTELEM))) == NULL)
+     ^
+decoder/mjpeg423_decoder.c:114:57: warning: passing argument 2 of 'altera_avalon_mailbox_retrieve_poll' from incompatible pointer type
+       altera_avalon_mailbox_retrieve_poll(receive_cpu0, message, 0);
+                                                         ^
+In file included from decoder/mjpeg423_decoder.c:12:0:
+../lab3_cpu1_bsp//drivers/inc/altera_avalon_mailbox_simple.h:78:5: note: expected 'alt_u32 *' but argument is of type 'uint *'
+ int altera_avalon_mailbox_retrieve_poll (altera_avalon_mailbox_dev* dev,alt_u32* msg_ptr, alt_u32 timeout);
+     ^
+decoder/mjpeg423_decoder.c:129:8: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint8_t *' [-Wformat=]
+        printf("received frame number %d, cb: %d \n", message[0], msg->Cbbitstream);
+        ^
+decoder/mjpeg423_decoder.c:129:8: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint8_t *' [-Wformat=]
+decoder/mjpeg423_decoder.c:154:1: warning: label 'exit_decode' defined but not used [-Wunused-label]
+ exit_decode:
+ ^
+decoder/mjpeg423_decoder.c:47:6: warning: unused variable 'status' [-Wunused-variable]
+  int status;
+      ^
+Info: Linking lab3_cpu1.elf
+nios2-elf-g++  -T'../lab3_cpu1_bsp//linker.x' -msys-crt0='../lab3_cpu1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../lab3_cpu1_bsp/   -Wl,-Map=lab3_cpu1.map   -O3 -g -Wall -std=c99  -mhw-div -mhw-mul -mno-hw-mulx  -o lab3_cpu1.elf obj/default/common/tables.o obj/default/common/util.o obj/default/decoder/idct.o obj/default/decoder/lossless_decode.o obj/default/decoder/mjpeg423_decoder.o obj/default/decoder/ycbcr_to_rgb.o obj/default/main.o -lm -msys-lib=m
+nios2-elf-insert lab3_cpu1.elf --thread_model hal --cpu_name cpu_1 --qsys true --simulation_enabled false --stderr_dev jtag_uart_1 --stdin_dev jtag_uart_1 --stdout_dev jtag_uart_1 --sopc_system_name ECE423_QSYS --quartus_project_dir "C:/Users/y983wang/ECE423/ece423_prefab" --jdi C:/Users/y983wang/ECE423/ece423_prefab/software/lab3_cpu1_bsp/../../ECE423_C5G.jdi --sopcinfo C:/Users/y983wang/ECE423/ece423_prefab/software/lab3_cpu1_bsp/../../ECE423_QSYS.sopcinfo
+Info: (lab3_cpu1.elf) 78 KBytes program size (code + initialized data).
+Info:                 262134 KBytes free for stack + heap.
+Info: Creating lab3_cpu1.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source lab3_cpu1.elf >lab3_cpu1.objdump
+[lab3_cpu1 build complete]
+23:12:49 **** Incremental Build of configuration Nios II for project lab3_cpu1 ****
+make all 
+Info: Building ../lab3_cpu1_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab3_cpu1_bsp/
+[BSP build complete]
+[lab3_cpu1 build complete]
+23:15:21 **** Build of configuration Nios II for project lab3_cpu1 ****
+make all 
+Info: Building ../lab3_cpu1_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab3_cpu1_bsp/
+[BSP build complete]
+Info: Compiling decoder/mjpeg423_decoder.c to obj/default/decoder/mjpeg423_decoder.o
+nios2-elf-gcc -xc -MP -MMD -c -I../lab3_cpu1_bsp//HAL/inc -I../lab3_cpu1_bsp/ -I../lab3_cpu1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall -std=c99  -mhw-div -mhw-mul -mno-hw-mulx  -o obj/default/decoder/mjpeg423_decoder.o decoder/mjpeg423_decoder.c
+decoder/mjpeg423_decoder.c: In function 'mjpeg423_decode':
+decoder/mjpeg423_decoder.c:75:53: warning: passing argument 2 of 'altera_avalon_mailbox_retrieve_poll' from incompatible pointer type
+   altera_avalon_mailbox_retrieve_poll(receive_cpu0, message, 0);
+                                                     ^
+In file included from decoder/mjpeg423_decoder.c:12:0:
+../lab3_cpu1_bsp//drivers/inc/altera_avalon_mailbox_simple.h:78:5: note: expected 'alt_u32 *' but argument is of type 'uint *'
+ int altera_avalon_mailbox_retrieve_poll (altera_avalon_mailbox_dev* dev,alt_u32* msg_ptr, alt_u32 timeout);
+     ^
+decoder/mjpeg423_decoder.c:88:4: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' [-Wformat=]
+    printf("Received 1st message  number: %d  size %d \n", message[0], msg->block_size);
+    ^
+decoder/mjpeg423_decoder.c:88:4: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' [-Wformat=]
+decoder/mjpeg423_decoder.c:97:5: warning: implicit declaration of function 'memalign' [-Wimplicit-function-declaration]
+     if((CbDCAC = (dct_block_t*)memalign(128, block_size * 64 * sizeof(DCTELEM))) == NULL)
+     ^
+decoder/mjpeg423_decoder.c:117:57: warning: passing argument 2 of 'altera_avalon_mailbox_retrieve_poll' from incompatible pointer type
+       altera_avalon_mailbox_retrieve_poll(receive_cpu0, message, 0);
+                                                         ^
+In file included from decoder/mjpeg423_decoder.c:12:0:
+../lab3_cpu1_bsp//drivers/inc/altera_avalon_mailbox_simple.h:78:5: note: expected 'alt_u32 *' but argument is of type 'uint *'
+ int altera_avalon_mailbox_retrieve_poll (altera_avalon_mailbox_dev* dev,alt_u32* msg_ptr, alt_u32 timeout);
+     ^
+decoder/mjpeg423_decoder.c:132:8: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint8_t *' [-Wformat=]
+        printf("received frame number %d, cb: %d \n", message[0], msg->Cbbitstream);
+        ^
+decoder/mjpeg423_decoder.c:132:8: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint8_t *' [-Wformat=]
+decoder/mjpeg423_decoder.c:157:1: warning: label 'exit_decode' defined but not used [-Wunused-label]
+ exit_decode:
+ ^
+decoder/mjpeg423_decoder.c:47:6: warning: unused variable 'status' [-Wunused-variable]
+  int status;
+      ^
+Info: Linking lab3_cpu1.elf
+nios2-elf-g++  -T'../lab3_cpu1_bsp//linker.x' -msys-crt0='../lab3_cpu1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../lab3_cpu1_bsp/   -Wl,-Map=lab3_cpu1.map   -O3 -g -Wall -std=c99  -mhw-div -mhw-mul -mno-hw-mulx  -o lab3_cpu1.elf obj/default/common/tables.o obj/default/common/util.o obj/default/decoder/idct.o obj/default/decoder/lossless_decode.o obj/default/decoder/mjpeg423_decoder.o obj/default/decoder/ycbcr_to_rgb.o obj/default/main.o -lm -msys-lib=m
+nios2-elf-insert lab3_cpu1.elf --thread_model hal --cpu_name cpu_1 --qsys true --simulation_enabled false --stderr_dev jtag_uart_1 --stdin_dev jtag_uart_1 --stdout_dev jtag_uart_1 --sopc_system_name ECE423_QSYS --quartus_project_dir "C:/Users/y983wang/ECE423/ece423_prefab" --jdi C:/Users/y983wang/ECE423/ece423_prefab/software/lab3_cpu1_bsp/../../ECE423_C5G.jdi --sopcinfo C:/Users/y983wang/ECE423/ece423_prefab/software/lab3_cpu1_bsp/../../ECE423_QSYS.sopcinfo
+Info: (lab3_cpu1.elf) 78 KBytes program size (code + initialized data).
+Info:                 262134 KBytes free for stack + heap.
+Info: Creating lab3_cpu1.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source lab3_cpu1.elf >lab3_cpu1.objdump
+[lab3_cpu1 build complete]
+23:15:23 **** Incremental Build of configuration Nios II for project lab3_cpu1 ****
+make all 
+Info: Building ../lab3_cpu1_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab3_cpu1_bsp/
+[BSP build complete]
+[lab3_cpu1 build complete]
+23:16:10 **** Build of configuration Nios II for project lab3_cpu0 ****
+make all 
+Info: Building ../lab3_cpu0_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab3_cpu0_bsp/
+[BSP build complete]
+Info: Compiling decoder/mjpeg423_decoder.c to obj/default/decoder/mjpeg423_decoder.o
+nios2-elf-gcc -xc -MP -MMD -c -I../lab3_cpu0_bsp//HAL/inc -I../lab3_cpu0_bsp/ -I../lab3_cpu0_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall -std=c99  -mhw-div -mhw-mul -mno-hw-mulx  -o obj/default/decoder/mjpeg423_decoder.o decoder/mjpeg423_decoder.c
+In file included from decoder/mjpeg423_decoder.h:17:0,
+                 from decoder/mjpeg423_decoder.c:16:
+decoder/../ece423_sd/ece423_sd.h:37:0: warning: "TRUE" redefined
+ #define TRUE    1
+ ^
+In file included from decoder/mjpeg423_decoder.c:15:0:
+decoder/../common/mjpeg423_types.h:17:0: note: this is the location of the previous definition
+ #define TRUE !FALSE
+ ^
+In file included from decoder/mjpeg423_decoder.h:17:0,
+                 from decoder/mjpeg423_decoder.c:16:
+decoder/../ece423_sd/ece423_sd.h:38:0: warning: "FALSE" redefined
+ #define FALSE   0
+ ^
+In file included from decoder/mjpeg423_decoder.c:15:0:
+decoder/../common/mjpeg423_types.h:16:0: note: this is the location of the previous definition
+ #define FALSE (0)
+ ^
+decoder/mjpeg423_decoder.c:20:0: warning: "DEBUG" redefined
+ #define DEBUG 0
+ ^
+In file included from decoder/../ece423_sd/ece423_sd.h:60:0,
+                 from decoder/mjpeg423_decoder.h:17,
+                 from decoder/mjpeg423_decoder.c:16:
+decoder/../ece423_sd/debug.h:25:0: note: this is the location of the previous definition
+     #define DEBUG(x)               {myprintf x;}  // standard in/out, specifed in project (it could be uart, jtag, or lcd)
+ ^
+decoder/mjpeg423_decoder.c: In function 'mjpeg423_decode':
+decoder/mjpeg423_decoder.c:182:13: warning: assignment makes integer from pointer without a cast
+  message[1] = msg;
+             ^
+decoder/mjpeg423_decoder.c:183:2: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' [-Wformat=]
+  printf("Sending blocksize.number %d, size %d  \n", message[0], msg->block_size);
+  ^
+decoder/mjpeg423_decoder.c:183:2: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' [-Wformat=]
+decoder/mjpeg423_decoder.c:192:55: warning: passing argument 2 of 'altera_avalon_mailbox_retrieve_poll' from incompatible pointer type
+     altera_avalon_mailbox_retrieve_poll(receive_cpu1, message, 0);
+                                                       ^
+In file included from decoder/mjpeg423_decoder.c:12:0:
+../lab3_cpu0_bsp//drivers/inc/altera_avalon_mailbox_simple.h:78:5: note: expected 'alt_u32 *' but argument is of type 'uint *'
+ int altera_avalon_mailbox_retrieve_poll (altera_avalon_mailbox_dev* dev,alt_u32* msg_ptr, alt_u32 timeout);
+     ^
+decoder/mjpeg423_decoder.c:202:6: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t' [-Wformat=]
+      printf("Receive blocksize reply Size:%d, index: %d \n", msg->block_size,  message[0]);
+      ^
+decoder/mjpeg423_decoder.c:202:6: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t' [-Wformat=]
+decoder/mjpeg423_decoder.c:214:5: warning: implicit declaration of function 'memalign' [-Wimplicit-function-declaration]
+     if((YDCAC = (dct_block_t*)memalign(128, hYb_size * wYb_size * 64 * sizeof(DCTELEM))) == NULL)
+     ^
+decoder/mjpeg423_decoder.c:356:14: warning: assignment makes integer from pointer without a cast
+   message[1] = msg;
+              ^
+decoder/mjpeg423_decoder.c:357:3: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint8_t *' [-Wformat=]
+   printf("Sending frame.  number: %d, Cb: %d \n", frame_index, msg->Cbbitstream);
+   ^
+decoder/mjpeg423_decoder.c:357:3: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint8_t *' [-Wformat=]
+decoder/mjpeg423_decoder.c:384:54: warning: passing argument 2 of 'altera_avalon_mailbox_retrieve_poll' from incompatible pointer type
+    altera_avalon_mailbox_retrieve_poll(receive_cpu1, message, 0);
+                                                      ^
+In file included from decoder/mjpeg423_decoder.c:12:0:
+../lab3_cpu0_bsp//drivers/inc/altera_avalon_mailbox_simple.h:78:5: note: expected 'alt_u32 *' but argument is of type 'uint *'
+ int altera_avalon_mailbox_retrieve_poll (altera_avalon_mailbox_dev* dev,alt_u32* msg_ptr, alt_u32 timeout);
+     ^
+decoder/mjpeg423_decoder.c:102:6: warning: variable 'frame_index_cpu1' set but not used [-Wunused-but-set-variable]
+  int frame_index_cpu1;
+      ^
+Info: Linking lab3_cpu0.elf
+nios2-elf-g++  -T'../lab3_cpu0_bsp//linker.x' -msys-crt0='../lab3_cpu0_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../lab3_cpu0_bsp/   -Wl,-Map=lab3_cpu0.map   -O3 -g -Wall -std=c99  -mhw-div -mhw-mul -mno-hw-mulx  -o lab3_cpu0.elf obj/default/common/tables.o obj/default/common/util.o obj/default/decoder/idct.o obj/default/decoder/lossless_decode.o obj/default/decoder/mjpeg423_decoder.o obj/default/decoder/ycbcr_to_rgb.o obj/default/ece423_sd/FatFileSystem.o obj/default/ece423_sd/FatInternal.o obj/default/ece423_sd/debug.o obj/default/ece423_sd/mmc.o obj/default/ece423_sd/ocsdc.o obj/default/ece423_sd/sd_lib.o obj/default/ece423_vid_ctl/ece423_vid_ctl.o obj/default/ece423_vid_ctl/font.o obj/default/ece423_vid_ctl/heatshrink/heatshrink.o obj/default/ece423_vid_ctl/heatshrink/heatshrink_decoder.o obj/default/ece423_vid_ctl/i2c.o obj/default/ece423_vid_ctl/uw_logo.o obj/default/main.o -lm -msys-lib=m
+nios2-elf-insert lab3_cpu0.elf --thread_model hal --cpu_name cpu_0 --qsys true --simulation_enabled false --id 0 --sidp 0x21101000 --timestamp 1553656304 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name ECE423_QSYS --quartus_project_dir "C:/Users/y983wang/ECE423/ece423_prefab" --jdi C:/Users/y983wang/ECE423/ece423_prefab/software/lab3_cpu0_bsp/../../ECE423_C5G.jdi --sopcinfo C:/Users/y983wang/ECE423/ece423_prefab/software/lab3_cpu0_bsp/../../ECE423_QSYS.sopcinfo
+Info: (lab3_cpu0.elf) 146 KBytes program size (code + initialized data).
+Info:                 262118 KBytes free for stack + heap.
+Info: Creating lab3_cpu0.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source lab3_cpu0.elf >lab3_cpu0.objdump
+[lab3_cpu0 build complete]
+23:16:13 **** Incremental Build of configuration Nios II for project lab3_cpu0 ****
+make all 
+Info: Building ../lab3_cpu0_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab3_cpu0_bsp/
+[BSP build complete]
+[lab3_cpu0 build complete]
+23:23:22 **** Build of configuration Nios II for project lab3_cpu1 ****
+make all 
+Info: Building ../lab3_cpu1_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab3_cpu1_bsp/
+[BSP build complete]
+Info: Compiling decoder/mjpeg423_decoder.c to obj/default/decoder/mjpeg423_decoder.o
+nios2-elf-gcc -xc -MP -MMD -c -I../lab3_cpu1_bsp//HAL/inc -I../lab3_cpu1_bsp/ -I../lab3_cpu1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall -std=c99  -mhw-div -mhw-mul -mno-hw-mulx  -o obj/default/decoder/mjpeg423_decoder.o decoder/mjpeg423_decoder.c
+decoder/mjpeg423_decoder.c: In function 'mjpeg423_decode':
+decoder/mjpeg423_decoder.c:75:53: warning: passing argument 2 of 'altera_avalon_mailbox_retrieve_poll' from incompatible pointer type
+   altera_avalon_mailbox_retrieve_poll(receive_cpu0, message, 0);
+                                                     ^
+In file included from decoder/mjpeg423_decoder.c:12:0:
+../lab3_cpu1_bsp//drivers/inc/altera_avalon_mailbox_simple.h:78:5: note: expected 'alt_u32 *' but argument is of type 'uint *'
+ int altera_avalon_mailbox_retrieve_poll (altera_avalon_mailbox_dev* dev,alt_u32* msg_ptr, alt_u32 timeout);
+     ^
+decoder/mjpeg423_decoder.c:88:4: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' [-Wformat=]
+    printf("Received 1st message  number: %d  size %d \n", message[0], msg->block_size);
+    ^
+decoder/mjpeg423_decoder.c:88:4: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' [-Wformat=]
+decoder/mjpeg423_decoder.c:97:5: warning: implicit declaration of function 'memalign' [-Wimplicit-function-declaration]
+     if((CbDCAC = (dct_block_t*)memalign(128, block_size * 64 * sizeof(DCTELEM))) == NULL)
+     ^
+decoder/mjpeg423_decoder.c:117:57: warning: passing argument 2 of 'altera_avalon_mailbox_retrieve_poll' from incompatible pointer type
+       altera_avalon_mailbox_retrieve_poll(receive_cpu0, message, 0);
+                                                         ^
+In file included from decoder/mjpeg423_decoder.c:12:0:
+../lab3_cpu1_bsp//drivers/inc/altera_avalon_mailbox_simple.h:78:5: note: expected 'alt_u32 *' but argument is of type 'uint *'
+ int altera_avalon_mailbox_retrieve_poll (altera_avalon_mailbox_dev* dev,alt_u32* msg_ptr, alt_u32 timeout);
+     ^
+decoder/mjpeg423_decoder.c:132:8: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint8_t *' [-Wformat=]
+        printf("received frame number %d, cb: %d \n", message[0], msg->Cbbitstream);
+        ^
+decoder/mjpeg423_decoder.c:132:8: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint8_t *' [-Wformat=]
+decoder/mjpeg423_decoder.c:157:1: warning: label 'exit_decode' defined but not used [-Wunused-label]
+ exit_decode:
+ ^
+decoder/mjpeg423_decoder.c:47:6: warning: unused variable 'status' [-Wunused-variable]
+  int status;
+      ^
+Info: Linking lab3_cpu1.elf
+nios2-elf-g++  -T'../lab3_cpu1_bsp//linker.x' -msys-crt0='../lab3_cpu1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../lab3_cpu1_bsp/   -Wl,-Map=lab3_cpu1.map   -O3 -g -Wall -std=c99  -mhw-div -mhw-mul -mno-hw-mulx  -o lab3_cpu1.elf obj/default/common/tables.o obj/default/common/util.o obj/default/decoder/idct.o obj/default/decoder/lossless_decode.o obj/default/decoder/mjpeg423_decoder.o obj/default/decoder/ycbcr_to_rgb.o obj/default/main.o -lm -msys-lib=m
+nios2-elf-insert lab3_cpu1.elf --thread_model hal --cpu_name cpu_1 --qsys true --simulation_enabled false --stderr_dev jtag_uart_1 --stdin_dev jtag_uart_1 --stdout_dev jtag_uart_1 --sopc_system_name ECE423_QSYS --quartus_project_dir "C:/Users/y983wang/ECE423/ece423_prefab" --jdi C:/Users/y983wang/ECE423/ece423_prefab/software/lab3_cpu1_bsp/../../ECE423_C5G.jdi --sopcinfo C:/Users/y983wang/ECE423/ece423_prefab/software/lab3_cpu1_bsp/../../ECE423_QSYS.sopcinfo
+Info: (lab3_cpu1.elf) 78 KBytes program size (code + initialized data).
+Info:                 262134 KBytes free for stack + heap.
+Info: Creating lab3_cpu1.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source lab3_cpu1.elf >lab3_cpu1.objdump
+[lab3_cpu1 build complete]
+23:23:25 **** Incremental Build of configuration Nios II for project lab3_cpu1 ****
+make all 
+Info: Building ../lab3_cpu1_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab3_cpu1_bsp/
+[BSP build complete]
+[lab3_cpu1 build complete]
+23:25:07 **** Build of configuration Nios II for project lab3_cpu0 ****
+make all 
+Info: Building ../lab3_cpu0_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab3_cpu0_bsp/
+[BSP build complete]
+Info: Compiling decoder/mjpeg423_decoder.c to obj/default/decoder/mjpeg423_decoder.o
+nios2-elf-gcc -xc -MP -MMD -c -I../lab3_cpu0_bsp//HAL/inc -I../lab3_cpu0_bsp/ -I../lab3_cpu0_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall -std=c99  -mhw-div -mhw-mul -mno-hw-mulx  -o obj/default/decoder/mjpeg423_decoder.o decoder/mjpeg423_decoder.c
+In file included from decoder/mjpeg423_decoder.h:17:0,
+                 from decoder/mjpeg423_decoder.c:16:
+decoder/../ece423_sd/ece423_sd.h:37:0: warning: "TRUE" redefined
+ #define TRUE    1
+ ^
+In file included from decoder/mjpeg423_decoder.c:15:0:
+decoder/../common/mjpeg423_types.h:17:0: note: this is the location of the previous definition
+ #define TRUE !FALSE
+ ^
+In file included from decoder/mjpeg423_decoder.h:17:0,
+                 from decoder/mjpeg423_decoder.c:16:
+decoder/../ece423_sd/ece423_sd.h:38:0: warning: "FALSE" redefined
+ #define FALSE   0
+ ^
+In file included from decoder/mjpeg423_decoder.c:15:0:
+decoder/../common/mjpeg423_types.h:16:0: note: this is the location of the previous definition
+ #define FALSE (0)
+ ^
+decoder/mjpeg423_decoder.c:20:0: warning: "DEBUG" redefined
+ #define DEBUG 0
+ ^
+In file included from decoder/../ece423_sd/ece423_sd.h:60:0,
+                 from decoder/mjpeg423_decoder.h:17,
+                 from decoder/mjpeg423_decoder.c:16:
+decoder/../ece423_sd/debug.h:25:0: note: this is the location of the previous definition
+     #define DEBUG(x)               {myprintf x;}  // standard in/out, specifed in project (it could be uart, jtag, or lcd)
+ ^
+decoder/mjpeg423_decoder.c: In function 'mjpeg423_decode':
+decoder/mjpeg423_decoder.c:182:13: warning: assignment makes integer from pointer without a cast
+  message[1] = msg;
+             ^
+decoder/mjpeg423_decoder.c:183:2: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' [-Wformat=]
+  printf("Sending blocksize.number %d, size %d  \n", message[0], msg->block_size);
+  ^
+decoder/mjpeg423_decoder.c:183:2: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' [-Wformat=]
+decoder/mjpeg423_decoder.c:192:55: warning: passing argument 2 of 'altera_avalon_mailbox_retrieve_poll' from incompatible pointer type
+     altera_avalon_mailbox_retrieve_poll(receive_cpu1, message, 0);
+                                                       ^
+In file included from decoder/mjpeg423_decoder.c:12:0:
+../lab3_cpu0_bsp//drivers/inc/altera_avalon_mailbox_simple.h:78:5: note: expected 'alt_u32 *' but argument is of type 'uint *'
+ int altera_avalon_mailbox_retrieve_poll (altera_avalon_mailbox_dev* dev,alt_u32* msg_ptr, alt_u32 timeout);
+     ^
+decoder/mjpeg423_decoder.c:202:6: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t' [-Wformat=]
+      printf("Receive blocksize reply Size:%d, index: %d \n", msg->block_size,  message[0]);
+      ^
+decoder/mjpeg423_decoder.c:202:6: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t' [-Wformat=]
+decoder/mjpeg423_decoder.c:214:5: warning: implicit declaration of function 'memalign' [-Wimplicit-function-declaration]
+     if((YDCAC = (dct_block_t*)memalign(128, hYb_size * wYb_size * 64 * sizeof(DCTELEM))) == NULL)
+     ^
+decoder/mjpeg423_decoder.c:356:14: warning: assignment makes integer from pointer without a cast
+   message[1] = msg;
+              ^
+decoder/mjpeg423_decoder.c:357:3: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint8_t *' [-Wformat=]
+   printf("Sending frame.  number: %d, Cb: %d \n", frame_index, msg->Cbbitstream);
+   ^
+decoder/mjpeg423_decoder.c:357:3: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint8_t *' [-Wformat=]
+decoder/mjpeg423_decoder.c:384:54: warning: passing argument 2 of 'altera_avalon_mailbox_retrieve_poll' from incompatible pointer type
+    altera_avalon_mailbox_retrieve_poll(receive_cpu1, message, 0);
+                                                      ^
+In file included from decoder/mjpeg423_decoder.c:12:0:
+../lab3_cpu0_bsp//drivers/inc/altera_avalon_mailbox_simple.h:78:5: note: expected 'alt_u32 *' but argument is of type 'uint *'
+ int altera_avalon_mailbox_retrieve_poll (altera_avalon_mailbox_dev* dev,alt_u32* msg_ptr, alt_u32 timeout);
+     ^
+decoder/mjpeg423_decoder.c:102:6: warning: variable 'frame_index_cpu1' set but not used [-Wunused-but-set-variable]
+  int frame_index_cpu1;
+      ^
+Info: Linking lab3_cpu0.elf
+nios2-elf-g++  -T'../lab3_cpu0_bsp//linker.x' -msys-crt0='../lab3_cpu0_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../lab3_cpu0_bsp/   -Wl,-Map=lab3_cpu0.map   -O3 -g -Wall -std=c99  -mhw-div -mhw-mul -mno-hw-mulx  -o lab3_cpu0.elf obj/default/common/tables.o obj/default/common/util.o obj/default/decoder/idct.o obj/default/decoder/lossless_decode.o obj/default/decoder/mjpeg423_decoder.o obj/default/decoder/ycbcr_to_rgb.o obj/default/ece423_sd/FatFileSystem.o obj/default/ece423_sd/FatInternal.o obj/default/ece423_sd/debug.o obj/default/ece423_sd/mmc.o obj/default/ece423_sd/ocsdc.o obj/default/ece423_sd/sd_lib.o obj/default/ece423_vid_ctl/ece423_vid_ctl.o obj/default/ece423_vid_ctl/font.o obj/default/ece423_vid_ctl/heatshrink/heatshrink.o obj/default/ece423_vid_ctl/heatshrink/heatshrink_decoder.o obj/default/ece423_vid_ctl/i2c.o obj/default/ece423_vid_ctl/uw_logo.o obj/default/main.o -lm -msys-lib=m
+nios2-elf-insert lab3_cpu0.elf --thread_model hal --cpu_name cpu_0 --qsys true --simulation_enabled false --id 0 --sidp 0x21101000 --timestamp 1553656304 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name ECE423_QSYS --quartus_project_dir "C:/Users/y983wang/ECE423/ece423_prefab" --jdi C:/Users/y983wang/ECE423/ece423_prefab/software/lab3_cpu0_bsp/../../ECE423_C5G.jdi --sopcinfo C:/Users/y983wang/ECE423/ece423_prefab/software/lab3_cpu0_bsp/../../ECE423_QSYS.sopcinfo
+Info: (lab3_cpu0.elf) 146 KBytes program size (code + initialized data).
+Info:                 262118 KBytes free for stack + heap.
+Info: Creating lab3_cpu0.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source lab3_cpu0.elf >lab3_cpu0.objdump
+[lab3_cpu0 build complete]
+23:25:10 **** Incremental Build of configuration Nios II for project lab3_cpu0 ****
+make all 
+Info: Building ../lab3_cpu0_bsp/
+C:/Software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab3_cpu0_bsp/
+[BSP build complete]
+[lab3_cpu0 build complete]
